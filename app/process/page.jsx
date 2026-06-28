@@ -1,4 +1,4 @@
-import PageWrapper from '../components/PageWrapper'
+import PageWrapper from '../Components/PageWrapper'
 import ProcessTimeline from '../Components/ProcessTimeline/ProcessTimeline'
 import './page.css'
 
