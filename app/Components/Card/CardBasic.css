@@ -97,3 +97,30 @@
 .card-basic--horizontal-right .card-basic__cta-group {
   justify-content: flex-end;
 }
+
+@media (max-width: 768px) {
+  .card-basic {
+    padding: 12px;  /* was 24px */
+  }
+
+  /* ------ Default: vertical stack, centered ------ */
+  .card-basic--default {
+    gap: 6px;  /* was 12px */
+  }
+
+  /* ------ Horizontal Left & Right ------ */
+  .card-basic--horizontal-left,
+  .card-basic--horizontal-right {
+    gap: 12px;  /* was 24px */
+  }
+
+  /* ------ Content area ------ */
+  .card-basic__content {
+    gap: 6px;  /* was 12px */
+  }
+
+  /* ------ CTA group ------ */
+  .card-basic__cta-group {
+    gap: 12px;  /* was 24px */
+  }
+}

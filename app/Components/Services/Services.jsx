@@ -1,9 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import './Services.css';
-import Button from '../Button/Button';
 
 const DEFAULT_SERVICES = [
   {
@@ -35,21 +34,27 @@ export default function Services({
   className = '',
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
-  function handleTap(i) {
-    // On mobile, tap toggles — tap again to deactivate
-    setActiveIndex(prev => (prev === i ? -1 : i));
+  // Detect if mobile
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  function handlePanelInteraction(i) {
+    setActiveIndex(i); // Just set to active, no toggle
   }
 
   return (
-    <section
-      className={['services-section', className].filter(Boolean).join(' ')}
-    >
+    <section className={['services-section', className].filter(Boolean).join(' ')}>
       <h2 className="services-section__heading">{heading}</h2>
 
       <div
         className="services-section__grid"
-        onMouseLeave={() => setActiveIndex(0)}
+        onMouseLeave={() => !isMobile && setActiveIndex(0)}
       >
         {services.map((service, i) => (
           <div
@@ -61,8 +66,8 @@ export default function Services({
             ]
               .filter(Boolean)
               .join(' ')}
-            onMouseEnter={() => setActiveIndex(i)}
-            onClick={() => handleTap(i)}
+            onMouseEnter={() => !isMobile ? handlePanelInteraction(i) : null}
+            onClick={() => isMobile && handlePanelInteraction(i)}
           >
             {service.imageSrc && (
               <div className="services-section__bg">

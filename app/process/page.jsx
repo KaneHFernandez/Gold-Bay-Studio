@@ -56,11 +56,9 @@ export default function ProcessPage() {
       </section>
 
       {/* ── Process timeline ── */}
-<div style={{ padding: '0 96px' }}>
-<ProcessTimeline steps={STEPS} />
+      <div className="process-timeline-wrapper">
+        <ProcessTimeline steps={STEPS} />
       </div>
-      <div style={{ padding: '48px 0' }}/>
-      
 
     </PageWrapper>
   )

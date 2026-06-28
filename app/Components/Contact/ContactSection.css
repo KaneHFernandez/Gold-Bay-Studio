@@ -46,11 +46,11 @@
 }
 
 .contact-section__paragraph {
-  font-family: 'Aeonik VF', sans-serif;
+  /* font-family: 'Aeonik VF', sans-serif;
   font-weight: 400;
   font-size: var(--type-p-size, 16px);
   line-height: 24px;
-  color: var(--text-paragraph, #333);
+  color: var(--text-paragraph, #333); */
   margin: 0;
 }
 
@@ -79,11 +79,13 @@
   line-height: var(--type-h3-line-height, 28px);
   color: var(--text-heading, #000); */
 text-decoration: none;
+color: var(--text-heading, #000);
   margin: 0;
 }
 
 .contact-section__subheading:hover {
   text-decoration: underline;
+color: var(--text-heading, #000);
 }
 
 /* ------ Right: image column ------ */

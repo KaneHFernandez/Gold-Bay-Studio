@@ -1,0 +1,24 @@
+.hero-section {
+  padding: 48px 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--surface-default);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 24px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 12px;
+  }
+}

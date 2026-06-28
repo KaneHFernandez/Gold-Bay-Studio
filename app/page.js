@@ -4,6 +4,8 @@ import BlogSection from './Components/BlogSection/BlogSection'
 import Image from './Components/Imagery/Image'
 import PageWrapper from './Components/PageWrapper'
 import Services from './Components/Services/Services'
+import './styles.css';
+
 
 export const metadata = {
   title: 'Gold Bay — Premium Automotive Brand Studio',
@@ -18,7 +20,12 @@ export const metadata = {
 }
 
 
+
+// Then use: <HeroSection>...</HeroSection>
+
 export default function Home() {
+
+
   return (
     <PageWrapper theme="night">
         {/* <div className="dark" style={{ backgroundColor: 'var(--surface-default)', minHeight: '100vh' }}> */}
@@ -28,20 +35,8 @@ export default function Home() {
       <h1 className="sr-only">Gold Bay — Premium Automotive Brand Studio</h1>
 
       {/* ── 1. Text block — 96px L/R, 48px T/B, paragraph centered ── */}
-      <div style={{
-        padding: '48px 96px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        boxSizing: 'border-box',
-        width: '100%',
-        backgroundColor: 'var(--surface-default)',
-      }}>
+      <div className="hero-section">
         <p style={{
-          fontFamily: "'Aeonik VF', sans-serif",
-          fontWeight: 400,
-          fontSize: '18px',
-          lineHeight: 1.75,
           color: 'var(--text-paragraph)',
           maxWidth: '720px',
           textAlign: 'center',

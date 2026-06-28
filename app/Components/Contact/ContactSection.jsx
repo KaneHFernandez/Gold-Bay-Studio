@@ -33,7 +33,7 @@ export default function ContactSection({
           {eyebrow && <p className="eyebrow contact-section__eyebrow">{eyebrow}</p>}
          {subheading && (
   <h3 className="contact-section__subheading">
-    <a href={`mailto:${subheading}`}>{subheading}</a>
+    <a className="contact-section__subheading" href={`mailto:${subheading}`}>{subheading}</a>
   </h3>
 )}
         </div>

@@ -3,7 +3,7 @@ import TextImageBlockSection from '../Components/TextImageBlockSection/TextImage
 import BlogSection from '../Components/BlogSection/BlogSection'
 import Image from '../Components/Imagery/Image'
 import CommunityGallery from '../Components/CommunityGallery/CommunityGallery'
-
+import '../styles.css';
 export const metadata = {
   title: 'About',
   description:
@@ -31,23 +31,10 @@ const images = [
     <main>
 
       {/* ── 1. Text block — 96px L/R, 48px T/B, paragraph centered ── */}
-<div style={{
-  padding: '48px 96px',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  gap: '36px',
-  alignItems: 'center',
-  boxSizing: 'border-box',
-  width: '100%',
-  backgroundColor: 'var(--surface-default)',
-}}>
+<div className="hero-section" 
+>
         <h1 style={{ textAlign: 'center' }}>WHERE IT STARTED</h1>
         <p style={{
-          fontFamily: "'Aeonik VF', sans-serif",
-          fontWeight: 400,
-          fontSize: '18px',
-          lineHeight: 1.75,
           color: 'var(--text-paragraph)',
           maxWidth: '720px',
           textAlign: 'center',
