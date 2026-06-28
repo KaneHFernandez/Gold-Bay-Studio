@@ -1,0 +1,47 @@
+/* ============================================
+   HeadingBlock Component
+   Based on Design System: "Content/Heading-Block"
+   Variants: Center · Left
+   ============================================ */
+
+.heading-block {
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+  width:          100%;
+}
+
+/* ------ Alignment ------ */
+.heading-block--center {
+  align-items:  center;
+  text-align:   center;
+}
+
+.heading-block--left {
+  align-items:  flex-start;
+  text-align:   left;
+}
+
+/* ------ h2 Heading ------ */
+.heading-block__heading {
+  font-family:    var(--font-heading, 'Heading Pro Wide Trial', sans-serif);
+  font-size:      var(--type-h2-size, 32px);
+  font-weight:    var(--type-h2-weight, 600);
+  line-height:    var(--type-h2-line-height, 36px);
+  letter-spacing: var(--type-h2-letter-spacing, 0px);
+  color:          var(--text-heading, #000000);
+  margin:         0;
+}
+
+/* ------ Paragraph ------ */
+.heading-block__paragraph {
+  font-family:    var(--font-body, 'Aeonik VF', sans-serif);
+  font-size:      var(--type-p-size, 16px);
+  font-weight:    var(--type-p-weight, 400);
+  line-height:    var(--type-p-line-height, 24px);
+  letter-spacing: var(--type-p-letter-spacing, 0px);
+  color:          var(--text-paragraph, #333333);
+  margin:         0;
+  max-width:      600px;
+}
+

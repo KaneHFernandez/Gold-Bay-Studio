@@ -1,0 +1,99 @@
+/* ============================================
+   CardBasic Component
+   Figma: Card/Basic — 3 layout variants
+   Reuses: Image.jsx, Button.jsx
+   Dark mode handled via global.css semantic tokens
+   ============================================ */
+
+.card-basic {
+  background-color: var(--surface-default);
+  padding: 24px;
+  display: flex;
+}
+
+/* ------ Default: vertical stack, centered ------ */
+.card-basic--default {
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+/* ------ Horizontal Left: image left, content right ------ */
+.card-basic--horizontal-left {
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* ------ Horizontal Right: content left, image right ------ */
+/* row-reverse flips visually on desktop while keeping image first in DOM,
+   so mobile column-stacking always shows image on top. */
+.card-basic--horizontal-right {
+  flex-direction: row-reverse;
+  gap: 24px;
+  align-items: flex-start;
+  text-align: right;
+}
+
+/* Image fills half width in horizontal layouts */
+.card-basic--horizontal-left .card-basic__image,
+.card-basic--horizontal-right .card-basic__image {
+  flex: 0 0 calc(50% - 12px);
+}
+
+/* ------ Content area ------ */
+.card-basic__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+/* ------ Eyebrow ------ */
+/* .card-basic__eyebrow {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--text-success, #449198);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+} */
+
+/* ------ Heading ------ */
+/* .card-basic__heading {
+  font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--text-heading);
+  margin: 0;
+} */
+
+/* ------ Paragraph ------ */
+/* .card-basic__paragraph {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-paragraph);
+  margin: 0;
+} */
+
+/* ------ CTA group ------ */
+.card-basic__cta-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-basic--default .card-basic__cta-group {
+  justify-content: center;
+}
+
+.card-basic--horizontal-right .card-basic__cta-group {
+  justify-content: flex-end;
+}

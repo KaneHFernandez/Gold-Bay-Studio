@@ -1,0 +1,113 @@
+/* ============================================
+   Footer Component
+   Figma: Navigation/Footer — Base-Content page
+   1440px wide, logo + nav links + email
+   Dark mode via global.css tokens.
+   ============================================ */
+
+.footer {
+  width: 100%;
+  background-color: var(--surface-default);
+  border-top: 1px solid color-mix(in srgb, var(--border-default) 50%, transparent);
+}
+
+.footer__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px var(--size-1000, 96px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-800, 64px);
+}
+
+/* ------ Logo ------ */
+.footer__logo {
+  text-decoration: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  filter: brightness(0);
+  transition: filter 0.2s ease;
+}
+
+[data-theme="night"] .footer__logo-img,
+.dark .footer__logo-img {
+  filter: brightness(0) invert(1);
+}
+
+/* ------ Nav links ------ */
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--size-600, 40px);
+  flex: 1;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.footer__link {
+  font-family: 'Aeonik VF', sans-serif;
+  font-size: var(--type-p-size, 16px);
+  font-weight: var(--type-p-weight, 400);
+  color: var(--text-paragraph);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--text-heading);
+}
+
+/* ------ Email ------ */
+.footer__email {
+  /* font-family: 'Aeonik VF', sans-serif;
+  font-size: var(--type-p-size, 16px);
+  font-weight: var(--type-p-weight, 400); */
+  color: var(--text-paragraph);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.footer__email:hover {
+  color: var(--text-heading);
+  text-decoration: underline;
+}
+
+/* ------ Responsive ------ */
+@media (max-width: 768px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px 24px;
+  }
+
+  .footer__nav {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__inner {
+    padding: 24px 96px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+  }
+}

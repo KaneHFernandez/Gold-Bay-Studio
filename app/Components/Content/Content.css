@@ -1,0 +1,70 @@
+/* ============================================
+   Content Component
+   Based on Design System: "Content" component
+   Structure: Eyebrow → H3 → Paragraph → Double CTA
+   ============================================ */
+
+.content {
+  display:        flex;
+  flex-direction: column;
+  gap:            24px;
+  width:          100%;
+}
+
+/* ------ Alignment ------ */
+.content--left  { align-items: flex-start; text-align: left;   }
+.content--center { align-items: center;    text-align: center;  }
+
+/* ------ Heading Block (Eyebrow + H3) ------ */
+.content__heading-block {
+  display:        flex;
+  flex-direction: column;
+  gap:            8px;
+  width:          100%;
+}
+
+/* ------ Eyebrow ------ */
+.content__eyebrow {
+  font-family:    var(--font-body, 'Aeonik VF', sans-serif);
+  font-size:      var(--type-eyebrow-size, 12px);
+  font-weight:    var(--type-eyebrow-weight, 700);
+  line-height:    var(--type-eyebrow-line-height, 12px);
+  letter-spacing: var(--type-eyebrow-letter-spacing, 0px);
+  color:          var(--text-success, #449198);  /* green — matches Figma */
+  margin:         0;
+  text-transform: uppercase;
+}
+
+/* ------ H3 Heading ------ */
+.content__heading {
+  font-family:    var(--font-heading, 'Heading Pro Wide Trial', sans-serif);
+  font-size:      var(--type-h2-size, 32px);
+  font-weight:    var(--type-h2-weight, 600);
+  line-height:    var(--type-h2-line-height, 36px);
+  letter-spacing: var(--type-h2-letter-spacing, 0px);
+  color:          var(--text-heading, #000000);
+  margin:         0;
+}
+
+/* ------ Paragraph ------ */
+.content__paragraph {
+  font-family:    var(--font-body, 'Aeonik VF', sans-serif);
+  font-size:      var(--type-p-size, 16px);
+  font-weight:    var(--type-p-weight, 400);
+  line-height:    var(--type-p-line-height, 24px);
+  letter-spacing: var(--type-p-letter-spacing, 0px);
+  color:          var(--text-paragraph, #333333);
+  margin:         0;
+}
+
+/* ------ Double CTA ------ */
+.content__cta-group {
+  display:     flex;
+  align-items: center;
+  gap:         24px;
+  flex-wrap:   wrap;
+}
+
+.content--center .content__cta-group {
+  justify-content: center;
+}

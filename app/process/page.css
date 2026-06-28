@@ -1,0 +1,49 @@
+/* ============================================
+   Process Page
+   Figma: Process page — hero heading + timeline
+   ============================================ */
+
+/* ------ Hero section ------ */
+.process-hero {
+  width: 100%;
+  padding: 96px var(--size-1000, 96px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--surface-default);
+}
+
+.process-hero__inner {
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process-hero__heading {
+  font-family: 'Aeonik VF', sans-serif;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text-heading, #000);
+  margin: 0;
+}
+
+.process-hero__paragraph {
+  font-family: 'Aeonik VF', sans-serif;
+  font-size: var(--type-p-size, 16px);
+  font-weight: var(--type-p-weight, 400);
+  line-height: 1.65;
+  color: var(--text-paragraph, #555);
+  margin: 0;
+}
+
+/* ------ Responsive ------ */
+@media (max-width: 768px) {
+  .process-hero {
+    padding: 64px 24px;
+  }
+}

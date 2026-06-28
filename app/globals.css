@@ -1,26 +1,430 @@
-@import "tailwindcss";
+/* ============================================================
+   globals.css
+   Generated directly from Figma Design System Base Template
+   Collections: Brand · Primitives · Semantic · Sizing · Typography · Component Sizing
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+   Day mode is default.
+   Night mode: add data-theme="night" or class="dark" to <html> or any wrapper.
+   ============================================================ */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─────────────────────────────────────────
+   RESET
+   ───────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--surface-default);
+  color: var(--text-heading);
+  font-family: var(--font-body);
+}
+
+
+/* ─────────────────────────────────────────
+   FONTS — Local files from /public/font
+   ───────────────────────────────────────── */
+@font-face {
+  font-family: 'Heading Pro Wide Trial';
+  src: url('/public/font/Heading-Pro-Wide-Bold-TRIAL.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik VF';
+  src: url('/public/font/aeonikvf.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ─────────────────────────────────────────
+   BRAND — Core palette
+   ───────────────────────────────────────── */
+:root {
+  --brand-red:    #CD3626;
+  --brand-green:  #15767E;
+  --brand-blue:   #51A4FF;
+  --brand-orange: #FF8E51;
+  --brand-yellow: #FFF051;
+  --brand-day:    #FFFFFF;
+  --brand-night:  #000000;
+  --brand-sunny:  #FFF6E3;
+}
+
+
+/* ─────────────────────────────────────────
+   PRIMITIVES — Color scales
+   ───────────────────────────────────────── */
+:root {
+
+  /* Redscale */
+  --color-red-50:  #FAEBE9;
+  --color-red-100: #F5D7D4;
+  --color-red-200: #EBAFA8;
+  --color-red-300: #E1867D;
+  --color-red-400: #D75E51;
+  --color-red-500: #CD3626;
+  --color-red-600: #A42B1E;
+  --color-red-700: #7B2017;
+  --color-red-800: #52160F;
+  --color-red-900: #290B08;
+  --color-red-950: #150504;
+
+  /* Greenscale */
+  --color-green-50:  #E8F1F2;
+  --color-green-100: #D0E4E5;
+  --color-green-200: #A1C8CB;
+  --color-green-300: #73ADB2;
+  --color-green-400: #449198;
+  --color-green-500: #15767E;
+  --color-green-600: #115E65;
+  --color-green-700: #0D474C;
+  --color-green-800: #082F32;
+  --color-green-900: #041819;
+  --color-green-950: #020C0D;
+
+  /* Bluescale */
+  --color-blue-50:  #EEF6FF;
+  --color-blue-100: #DCEDFF;
+  --color-blue-200: #B9DBFF;
+  --color-blue-300: #97C8FF;
+  --color-blue-400: #74B6FF;
+  --color-blue-500: #51A4FF;
+  --color-blue-600: #4183CC;
+  --color-blue-700: #316299;
+  --color-blue-800: #204266;
+  --color-blue-900: #102133;
+  --color-blue-950: #08101A;
+
+  /* Orangescale */
+  --color-orange-50:  #FFF4EE;
+  --color-orange-100: #FFE8DC;
+  --color-orange-200: #FFD2B9;
+  --color-orange-300: #FFBB97;
+  --color-orange-400: #FFA574;
+  --color-orange-500: #FF8E51;
+  --color-orange-600: #CC7241;
+  --color-orange-700: #995531;
+  --color-orange-800: #663920;
+  --color-orange-900: #331C10;
+  --color-orange-950: #1A0E08;
+
+  /* Yellowscale */
+  --color-yellow-50:  #FFFDEE;
+  --color-yellow-100: #FFFCDC;
+  --color-yellow-200: #FFF9B9;
+  --color-yellow-300: #FFF697;
+  --color-yellow-400: #FFF374;
+  --color-yellow-500: #FFF051;
+  --color-yellow-600: #CCC041;
+  --color-yellow-700: #999031;
+  --color-yellow-800: #666020;
+  --color-yellow-900: #333010;
+  --color-yellow-950: #1A1808;
+
+  /* Grayscale */
+  --color-gray-0:   #FFFFFF;
+  --color-gray-50:  #E5E5E5;
+  --color-gray-100: #CCCCCC;
+  --color-gray-200: #999999;
+  --color-gray-300: #666666;
+  --color-gray-400: #333333;
+  --color-gray-450: #1A1A1A;
+  --color-gray-500: #000000;
+}
+
+
+/* ─────────────────────────────────────────
+   SIZING — From Figma Brand/Sizing
+   ───────────────────────────────────────── */
+:root {
+  --size-0:    0px;
+  --size-100:  4px;
+  --size-200:  8px;
+  --size-300:  12px;
+  --size-400:  16px;
+  --size-500:  20px;
+  --size-600:  24px;
+  --size-700:  28px;
+  --size-800:  32px;
+  --size-900:  36px;
+  --size-1000: 48px;
+  --size-1100: 56px;
+  --size-1200: 64px;
+  --size-1300: 72px;
+  --size-1400: 80px;
+  --size-1500: 88px;
+  --size-1600: 96px;
+  --size-1700: 104px;
+  --size-1800: 112px;
+  --size-1900: 120px;
+  --size-2000: 128px;
+  --size-2100: 136px;
+  --size-2200: 144px;
+  --size-2300: 152px;
+  --size-2400: 160px;
+  --size-2500: 164px;
+  --size-2600: 172px;
+  --size-2700: 180px;
+  --size-2800: 188px;
+  --size-2900: 196px;
+}
+
+
+/* ─────────────────────────────────────────
+   TYPOGRAPHY — From Figma Brand/Typography
+   Heading Pro Wide Trial · Aeonik VF
+   ───────────────────────────────────────── */
+:root {
+  --font-heading: 'Heading Pro Wide Trial', sans-serif;
+  --font-body:    'Aeonik VF', sans-serif;
+  --font-ui:      'Aeonik VF', sans-serif;
+
+
+  /* Heading 2 — 48px / 700 / 56px lh */
+  --type-h1-size:    48px;
+  --type-h1-weight:  700;
+  --type-h1-lh:      56px;
+  --type-h1-ls:      0px;
+
+  /* Heading 3 — 32px / 700 / 36px lh */
+  --type-h2-size:    32px;
+  --type-h2-weight:  700;
+  --type-h2-lh:      36px;
+  --type-h2-ls:      0px;
+
+  /* Heading 4 — 28px / 700 / 32px lh */
+  --type-h3-size:    24px;
+  --type-h3-weight:  700;
+  --type-h3-lh:      28px;
+  --type-h3-ls:      0px;
+
+  /* Paragraph — 16px / 400 / 24px lh */
+  --type-p-size:     16px;
+  --type-p-weight:   400;
+  --type-p-lh:       24px;
+  --type-p-ls:       0px;
+
+
+  /* Eyebrow — 12px / 700 / 12px lh */
+  --type-eyebrow-size:   12px;
+  --type-eyebrow-weight: 700;
+  --type-eyebrow-lh:     12px;
+  --type-eyebrow-ls:     0px;
+}
+
+
+/* ─────────────────────────────────────────
+   COMPONENT SIZING — From Figma Compoennt-Sizing
+   ───────────────────────────────────────── */
+:root {
+  --comp-xs:  285px;
+  --comp-sm:  392px;
+  --comp-md:  606px;
+  --comp-lg:  820px;
+  --comp-full: 1248px;
+}
+
+
+/* ─────────────────────────────────────────
+   SEMANTIC — Day mode (default)
+   From Figma Semantic collection / Day mode
+   ───────────────────────────────────────── */
+:root,
+[data-theme="day"] {
+
+  /* Surfaces */
+  --surface-default:     #FFFFFF;  /* Colour/Day */
+  --surface-night:       #000000;  /* Colour/Night */
+  --surface-sunny:       #FFF6E3;  /* Colour/Sunny */
+  --surface-primary:     #F5D7D4;  /* Redscale/100 */
+  --surface-secondary:   #D0E4E5;  /* Greenscale/100 */
+  --surface-success:     #449198;  /* Greenscale/400 */
+  --surface-warning:     #FFA574;  /* Orangescale/400 */
+  --surface-error:       #D75E51;  /* Redscale/400 */
+  --surface-information: #74B6FF;  /* Bluescale/400 */
+
+  /* Typography */
+  --text-heading:     #000000;  /* Colour/Night */
+  --text-paragraph:   #333333;  /* Grayscale/400 */
+  --text-success:     #449198;  /* Greenscale/400 */
+  --text-warning:     #FFA574;  /* Orangescale/400 */
+  --text-error:       #D75E51;  /* Redscale/400 */
+  --text-information: #74B6FF;  /* Bluescale/400 */
+
+  /* Borders */
+  --border-default:         #333333;  /* Grayscale/400 */
+  --border-default-hovered: #999999;  /* Grayscale/200 */
+  --border-success:         #449198;
+  --border-warning:         #FFA574;
+  --border-error:           #D75E51;
+  --border-information:     #74B6FF;
+
+  /* Buttons */
+  --btn-bg-default:              #000000;  /* Colour/Night */
+  --btn-bg-default-hovered:      #000000;
+  --btn-text-primary:            #FFFFFF;  /* Colour/Day */
+  --btn-text-primary-hovered:    #E5E5E5;  /* Grayscale/50 */
+  --btn-text-secondary:          #000000;  /* Colour/Night */
+  --btn-text-secondary-hovered:  #333333;  /* Grayscale/400 */
+
+  /* Icons */
+  --icon-color-primary:    #000000;  /* Colour/Night */
+  --icon-color-secondary:  #FFFFFF;  /* Colour/Day */
+  --icon-bg-default:       #000000;
+  --icon-bg-success:       #449198;
+  --icon-bg-warning:       #FFA574;
+  --icon-bg-error:         #D75E51;
+  --icon-bg-information:   #74B6FF;
+}
+
+
+/* ─────────────────────────────────────────
+   SEMANTIC — Night mode
+   From Figma Semantic collection / Night mode
+   Usage: data-theme="night" or class="dark"
+   ───────────────────────────────────────── */
+[data-theme="night"],
+.dark {
+
+  /* Surfaces */
+  --surface-default:     #000000;  /* Colour/Night */
+  --surface-night:       #FFFFFF;  /* Colour/Day */
+  --surface-sunny:       #000000;  /* Colour/Night */
+  --surface-primary:     #290B08;  /* Redscale/900 */
+  --surface-secondary:   #041819;  /* Greenscale/900 */
+  --surface-success:     #449198;  /* Greenscale/400 — same */
+  --surface-warning:     #FFA574;  /* Orangescale/400 — same */
+  --surface-error:       #D75E51;  /* Redscale/400 — same */
+  --surface-information: #74B6FF;  /* Bluescale/400 — same */
+
+  /* Typography */
+  --text-heading:     #FFFFFF;  /* Colour/Day */
+  --text-paragraph:   #E5E5E5;  /* Grayscale/50 */
+  --text-success:     #449198;  /* same */
+  --text-warning:     #FFA574;  /* same */
+  --text-error:       #D75E51;  /* same */
+  --text-information: #74B6FF;  /* same */
+
+  /* Borders */
+  --border-default:         #E5E5E5;  /* Grayscale/50 */
+  --border-default-hovered: #CCCCCC;  /* Grayscale/100 */
+  --border-success:         #449198;
+  --border-warning:         #FFA574;
+  --border-error:           #D75E51;
+  --border-information:     #74B6FF;
+
+  /* Buttons */
+  --btn-bg-default:              #FFFFFF;  /* Colour/Day */
+  --btn-bg-default-hovered:      #FFFFFF;
+  --btn-text-primary:            #000000;  /* Colour/Night */
+  --btn-text-primary-hovered:    #E5E5E5;  /* Grayscale/50 */
+  --btn-text-secondary:          #FFFFFF;  /* Colour/Day */
+  --btn-text-secondary-hovered:  #E5E5E5;  /* Grayscale/50 */
+
+  /* Icons */
+  --icon-color-primary:    #FFFFFF;  /* Colour/Day */
+  --icon-color-secondary:  #000000;  /* Colour/Night */
+  --icon-bg-default:       #FFFFFF;
+  --icon-bg-success:       #449198;
+  --icon-bg-warning:       #FFA574;
+  --icon-bg-error:         #D75E51;
+  --icon-bg-information:   #74B6FF;
+}
+
+/* h1 {
+  font-family: var(--font-heading);
+  font-size:   var(--type-h1-size);
+  font-weight: var(--type-h1-weight);
+  line-height: var(--type-h1-lh);
+  letter-spacing: var(--type-h1-ls);
+  color: var(--text-heading);
+  text-transform: uppercase;
+} */
+
+h1 {
+  font-family: var(--font-heading);
+  font-size:   var(--type-h1-size);
+  font-weight: var(--type-h1-weight);
+  line-height: var(--type-h1-lh);
+  letter-spacing: var(--type-h1-ls);
+  color: var(--text-heading);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size:   var(--type-h2-size);
+  font-weight: var(--type-h2-weight);
+  line-height: var(--type-h2-lh);
+  letter-spacing: var(--type-h2-ls);
+  color: var(--text-heading);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size:   var(--type-h3-size);
+  font-weight: var(--type-h3-weight);
+  line-height: var(--type-h3-lh);
+  letter-spacing: var(--type-h3-ls);
+  color: var(--text-heading);
+  text-transform: uppercase;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size:   var(--type-p-size);
+  font-weight: var(--type-p-weight);
+  line-height: var(--type-p-lh);
+  color: var(--text-paragraph);
+  opacity: 0.8;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size:   var(--type-eyebrow-size);
+  font-weight: var(--type-eyebrow-weight);
+  line-height: var(--type-eyebrow-lh);
+  letter-spacing: var(--type-eyebrow-ls);
+  color: var(--text-heading);
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: var(--brand-night);
+  color: var(--brand-day);
+  font-family: var(--font-body);
+  font-size: 14px;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
 }

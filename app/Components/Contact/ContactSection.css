@@ -1,0 +1,134 @@
+/* ============================================
+   ContactSection Component
+   Figma: Contact (ID: 5104:949) — Section-Content page
+   1440×853px — two equal columns, 96px h-pad, 48px v-pad, 36px gap
+   ============================================ */
+
+/* ------ Outer section ------ */
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-900, 36px);
+  padding: 48px 96px;
+  align-items: stretch;
+  background-color: var(--surface-default);
+  box-sizing: border-box;
+  max-height: 606px;
+}
+
+
+
+/* ------ Left: content column ------ */
+.contact-section__content {
+  flex: 0 0 calc(50% - 18px); /* 50% minus half the 36px gap */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 606px;
+}
+
+/* Top block: heading + paragraph */
+.contact-section__heading-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* padding: 24px; */
+}
+
+.contact-section__heading {
+  /* font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: var(--type-h3-size, 24px);
+  line-height: var(--type-h3-line-height, 28px); */
+  color: var(--text-heading, #000);
+  margin: 0;
+}
+
+.contact-section__paragraph {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 400;
+  font-size: var(--type-p-size, 16px);
+  line-height: 24px;
+  color: var(--text-paragraph, #333);
+  margin: 0;
+}
+
+/* Bottom block: eyebrow + subheading */
+.contact-section__sub-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-section__eyebrow {
+  /* font-family: 'Aeonik VF', sans-serif;
+  font-weight: 700;
+  font-size: var(--type-eyebrow-size, 12px);
+  line-height: var(--type-eyebrow-size, 12px);
+  color: var(--text-success, #449198);
+  text-transform: uppercase; */
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.contact-section__subheading {
+  /* font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: var(--type-h3-size, 24px);
+  line-height: var(--type-h3-line-height, 28px);
+  color: var(--text-heading, #000); */
+text-decoration: none;
+  margin: 0;
+}
+
+.contact-section__subheading:hover {
+  text-decoration: underline;
+}
+
+/* ------ Right: image column ------ */
+.contact-section__image {
+  flex: 0 0 calc(50% - 18px);
+  overflow: hidden;
+}
+
+/* Black placeholder when no image is provided (matches Figma) */
+.contact-section__placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 757px;
+  background-color: var(--surface-night, #000);
+  display: block;
+}
+
+/* ------ Dark mode ------ */
+[data-theme="night"] .contact-section__placeholder,
+.dark .contact-section__placeholder {
+  background-color: #111;
+}
+
+/* ------ Responsive ------ */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 48px 24px;
+  }
+
+  .contact-section__content,
+  .contact-section__image {
+    flex: 1 1 auto;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .contact-section__placeholder {
+    min-height: 400px;
+  }
+  /* .contact-section__heading-block {
+    padding: 0
+  } */
+
+  .contact-section__content {
+    gap: 40px;
+  }
+}

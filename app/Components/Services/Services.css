@@ -1,0 +1,182 @@
+/* ============================================
+   Services Section
+   Desktop: 3 panels side by side, each with own image
+   Mobile:  stacked vertically at 606px each, title only
+   ============================================ */
+
+.services-section {
+  width: 100%;
+  padding: 48px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.services-section__heading {
+  text-align: left;
+  color: var(--text-heading);
+}
+
+/* ── Grid ── */
+.services-section__grid {
+  position: relative;
+  width: 100%;
+  height: 624px;
+  min-height: 606px;
+  display: flex;
+}
+
+/* ── Panel ── */
+.services-section__panel {
+
+  position: relative;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.services-section__panel--bordered {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.services-section__panel--active {
+  opacity: 1;
+}
+
+/* ── Per-panel background ── */
+.services-section__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.services-section__bg-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.services-section__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ── Content sits above bg ── */
+.services-section__description,
+.services-section__footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Description — collapses when inactive ── */
+.services-section__description {
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: var(--type-p-size);
+  line-height: var(--type-p-lh);
+  max-width: 360px;
+  margin: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease 0.05s, max-height 0.35s ease;
+}
+
+.services-section__panel--active .services-section__description {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* ── Footer: title + arrow ── */
+.services-section__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.services-section__title {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: var(--type-h3-size);
+  font-weight: var(--type-h3-weight);
+  line-height: var(--type-h3-lh);
+  letter-spacing: var(--type-h3-ls);
+  margin: 0;
+}
+
+.services-section__arrow {
+  color: #ffffff;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.services-section__panel:hover .services-section__arrow {
+  transform: translateX(4px);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
+  .services-section__grid {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .services-section__panel {
+    height: 606px;
+    opacity: 1;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .services-section__panel--bordered {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Default on mobile: heading visible, description hidden */
+  .services-section__description,
+  .services-section__panel--active .services-section__description {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  .services-section__title {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Active on mobile: overlay darkens, description shows, heading hides */
+  .services-section__panel--active .services-section__bg-overlay {
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .services-section__panel--active .services-section__description {
+    opacity: 1;
+    max-height: 300px;
+  }
+
+  .services-section__panel--active .services-section__title {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 32px 0;
+  }
+}

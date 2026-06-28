@@ -1,0 +1,49 @@
+/* ============================================
+   TextImageBlockSection Component
+   Figma: Text-Image-Block Section — Section-Content page
+   Eyebrow label + 2-column grid of TextImageBlock cards.
+   1440px wide, 96px side padding, 48px top/bottom.
+   Dark mode via global.css tokens.
+   ============================================ */
+
+.tib-section {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 48px 96px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--surface-default);
+}
+
+
+/* ------ Section label (eyebrow) ------ */
+/* .tib-section__label {
+  font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--text-heading);
+  margin: 0;
+  text-transform: uppercase;
+} */
+
+/* ------ 2-column card grid ------ */
+.tib-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+/* ------ Responsive ------ */
+@media (max-width: 768px) {
+  .tib-section {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
+  .tib-section__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

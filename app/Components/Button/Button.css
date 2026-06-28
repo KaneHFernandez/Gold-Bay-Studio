@@ -1,0 +1,145 @@
+/* ============================================
+   Button Component
+   Based on Design System: Design System Base Template
+   Fonts: Inter (Semi Bold) — ensure Inter is loaded
+
+   NOTE: Color values come from global.css semantic tokens.
+   Dark mode is handled automatically when .dark is on <html>.
+   ============================================ */
+
+/* ------ Design Tokens ------ */
+:root {
+  /* Typography */
+  --btn-font-family:    'Inter', sans-serif;
+  --btn-font-weight:    600;
+  --btn-font-size:      16px;
+  --btn-line-height:    1;
+  --btn-letter-spacing: 0px;
+
+  /* Spacing */
+  --btn-padding-y:      12px;
+  --btn-padding-x:      32px;
+  --btn-gap:            8px;
+
+  /* Shape */
+  --btn-border-radius:  0px;
+  --btn-border-width:   1px;
+
+  /* Transition */
+  --btn-transition:     background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+/* ------ Base Reset ------ */
+.btn {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  gap:             var(--btn-gap);
+  padding:         var(--btn-padding-y) var(--btn-padding-x);
+  font-family:     var(--btn-font-family);
+  font-weight:     var(--btn-font-weight);
+  font-size:       var(--btn-font-size);
+  line-height:     var(--btn-line-height);
+  letter-spacing:  var(--btn-letter-spacing);
+  border-radius:   var(--btn-border-radius);
+  border:          var(--btn-border-width) solid transparent;
+  cursor:          pointer;
+  text-decoration: none;
+  white-space:     nowrap;
+  transition:      var(--btn-transition);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:focus-visible {
+  outline:        2px solid var(--btn-bg-default, #000000);
+  outline-offset: 3px;
+}
+
+/* ------ Primary Variant ------ */
+.btn--primary {
+  background-color: var(--btn-bg-default, #000000);
+  border-color:     var(--btn-bg-default, #000000);
+  color:            var(--btn-text-primary, #ffffff);
+}
+
+.btn--primary:hover {
+  background-color: var(--btn-bg-default-hovered, #333333);
+  border-color:     var(--btn-bg-default-hovered, #333333);
+  color:            var(--btn-text-primary-hovered, #cccccc);
+}
+
+.btn--primary:disabled,
+.btn--primary[aria-disabled="true"] {
+  background-color: #cccccc;
+  border-color:     #cccccc;
+  color:            #e5e5e5;
+  cursor:           not-allowed;
+  pointer-events:   none;
+}
+
+/* ------ Outline Variant ------ */
+.btn--outline {
+  background-color: transparent;
+  border-color:     var(--btn-text-secondary, #000000);
+  color:            var(--btn-text-secondary, #000000);
+}
+
+.btn--outline:hover {
+  background-color: var(--btn-bg-default, #000000);
+  border-color:     var(--btn-bg-default, #000000);
+  color:            var(--btn-text-primary, #ffffff);
+}
+
+.btn--outline:disabled,
+.btn--outline[aria-disabled="true"] {
+  background-color: transparent;
+  border-color:     #cccccc;
+  color:            #cccccc;
+  cursor:           not-allowed;
+  pointer-events:   none;
+}
+
+/* ------ Link Variant (text + arrow) ------ */
+.btn--link {
+  background-color: transparent;
+  border-color:     transparent;
+  text-decoration: underline;
+  color:            var(--btn-text-secondary, #000000);
+  padding:          0;
+  gap:              var(--btn-gap);
+}
+.link-hover:hover {
+  opacity: 95;
+}
+.btn--link:hover {
+  background-color: transparent;
+  color:            var(--btn-text-secondary-hovered, #333333);
+}
+
+.btn--link:hover .btn__icon {
+  transform: translateX(4px);
+}
+
+.btn--link:disabled,
+.btn--link[aria-disabled="true"] {
+  color:          #cccccc;
+  cursor:         not-allowed;
+  pointer-events: none;
+}
+
+/* ------ Icon ------ */
+.btn__icon {
+  display:         inline-flex;
+  align-items:     center;
+  transition:      transform 0.2s ease;
+  flex-shrink:     0;
+}
+
+.btn__icon svg {
+  width:  16px;
+  height: 16px;
+  fill:   none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap:  round;
+  stroke-linejoin: round;
+}

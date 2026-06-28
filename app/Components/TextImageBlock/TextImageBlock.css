@@ -1,0 +1,106 @@
+/* ============================================
+   TextImageBlock Component
+   Image fills the block. Content overlaid, centered.
+   Heading always visible. Paragraph + CTA fade in on hover.
+   Overlay: 25% default → 50% on hover.
+   ============================================ */
+
+/* ------ Wrapper — position context ------ */
+.text-image-block {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* ------ Image fills the wrapper ------ */
+.text-image-block__image {
+  width: 100%;
+  display: block;
+}
+
+/* ------ Black overlay ------ */
+.text-image-block__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.text-image-block:hover .text-image-block__overlay {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* ------ Content — pinned to center ------ */
+.text-image-block__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+/* ------ Heading — always visible, naturally centered when siblings have no height ------ */
+.text-image-block__heading {
+  /* font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #ffffff; */
+  color: #ffffff;
+  margin: 0;
+  flex-shrink: 0;
+  transition: margin 0.35s ease;
+}
+
+/* On hover, add breathing room below heading as content expands */
+.text-image-block:hover .text-image-block__heading {
+  margin-bottom: 4px;
+}
+
+/* ------ Paragraph — collapsed to zero height, fades in on hover ------ */
+.text-image-block__paragraph {
+  /* font-family: 'Aeonik VF', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9); */
+  margin: 0;
+  max-width: 392px;
+  color: #ffffff;
+  /* collapsed */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease 0.05s;
+}
+
+
+.text-image-block:hover .text-image-block__paragraph {
+  max-height: 120px;
+  opacity: 0.8;
+}
+
+/* ------ CTA — collapsed to zero height, fades in on hover ------ */
+.text-image-block__cta {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease 0.1s;
+}
+
+.text-image-block:hover .text-image-block__cta {
+  max-height: 60px;
+  opacity: 1;
+}
+
+/* Force link button white over the dark overlay */
+.text-image-block__cta .btn--link,
+.text-image-block__cta .btn--link:hover {
+  color: #ffffff;
+}

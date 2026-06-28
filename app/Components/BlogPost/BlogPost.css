@@ -1,0 +1,144 @@
+/* ============================================
+   BlogPost Component
+   Full blog post renderer — hero, cover, content blocks.
+   Dark mode via global.css tokens.
+   ============================================ */
+
+.blog-post {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  box-sizing: border-box;
+}
+
+/* ------ Header ------ */
+.blog-post__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* .blog-post__eyebrow {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-success, #449198);
+  margin: 0;
+} */
+
+/* .blog-post__date {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-paragraph);
+  margin: 0;
+} */
+
+/* .blog-post__title {
+  font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--text-heading);
+  margin: 0;
+} */
+
+/* .blog-post__excerpt {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-paragraph);
+  margin: 0;
+  max-width: 640px;
+  align-self: center;
+} */
+
+/* ------ Cover image ------ */
+.blog-post__cover {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+/* ------ Body content ------ */
+.blog-post__body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Heading blocks */
+/* .blog-post__block-heading {
+  font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--text-heading);
+  margin: 16px 0 0;
+} */
+
+/* Paragraph blocks */
+/* .blog-post__block-paragraph {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-paragraph);
+  margin: 0;
+} */
+
+/* Image blocks */
+.blog-post__block-image {
+  width: 100%;
+  margin: 8px 0;
+}
+
+/* .blog-post__block-caption {
+  font-family: 'Aeonik VF', sans-serif;
+  font-size: 13px;
+  color: var(--text-paragraph);
+  text-align: center;
+  margin-top: 8px;
+} */
+
+/* Quote blocks */
+/* .blog-post__block-quote {
+  border-left: 3px solid var(--text-success, #449198);
+  margin: 8px 0;
+  padding: 12px 24px;
+  background-color: var(--surface-default);
+} */
+
+/* .blog-post__block-quote p {
+  font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--text-heading);
+  margin: 0;
+  font-style: italic;
+} */
+
+/* ------ Responsive ------ */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 48px 20px;
+  }
+
+  .blog-post__title {
+    font-size: 28px;
+  }
+
+  .blog-post__block-heading {
+    font-size: 22px;
+  }
+
+  .blog-post__block-paragraph {
+    font-size: 16px;
+  }
+}

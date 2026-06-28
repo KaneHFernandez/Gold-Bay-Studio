@@ -1,65 +1,145 @@
-import Image from "next/image";
+import AboutSection from './Components/AboutSection/AboutSection'
+import TextImageBlockSection from './Components/TextImageBlockSection/TextImageBlockSection'
+import BlogSection from './Components/BlogSection/BlogSection'
+import Image from './Components/Imagery/Image'
+import PageWrapper from './Components/PageWrapper'
+import Services from './Components/Services/Services'
+
+export const metadata = {
+  title: 'Gold Bay — Premium Automotive Brand Studio',
+  description:
+    'Gold Bay builds brands the premium automotive world actually respects. Strategy, identity, and positioning for supercar clubs, luxury dealerships, track day operators, and niche manufacturers.',
+  openGraph: {
+    title: 'Gold Bay — Premium Automotive Brand Studio',
+    description:
+      'Brand development built exclusively for the premium automotive world.',
+    url: 'https://goldbay.studio',
+  },
+}
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <PageWrapper theme="night">
+        {/* <div className="dark" style={{ backgroundColor: 'var(--surface-default)', minHeight: '100vh' }}> */}
+
+    <main>
+
+      <h1 className="sr-only">Gold Bay — Premium Automotive Brand Studio</h1>
+
+      {/* ── 1. Text block — 96px L/R, 48px T/B, paragraph centered ── */}
+      <div style={{
+        padding: '48px 96px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxSizing: 'border-box',
+        width: '100%',
+        backgroundColor: 'var(--surface-default)',
+      }}>
+        <p style={{
+          fontFamily: "'Aeonik VF', sans-serif",
+          fontWeight: 400,
+          fontSize: '18px',
+          lineHeight: 1.75,
+          color: 'var(--text-paragraph)',
+          maxWidth: '720px',
+          textAlign: 'center',
+          margin: 0,
+        }}>
+          A brand development studio built for the premium automotive world. We build brands people follow, respect, and trust the moment they encounter them. Years inside this industry mean we already know what works, what doesn't, and how to get there without the guesswork.
+        </p>
+      </div>
+
+      {/* ── 2. Full-width image ── */}
+      <div style={{ width: '100%', lineHeight: 0 }}>
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+          src="/Chevron B16.jpg" alt="Driver portrait" ratio="16:9"
+          // style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+               {/* <Image src="/Mcalren F1 close-front-duo.jpg" alt="Driver portrait" ratio="1:2" />
+      </div> */}
+      </div>
+
+      {/* ── 3. About Section ── */}
+      <AboutSection
+        leftImageSrc="/Ferrari 812 Competizione Aperta.jpg"
+        leftImageAlt="Supercar on track"
+        rightImageSrc='/Pagani Zonda 760 "Unica" Roadster.jpg'
+        rightImageAlt="Driving experience event"
+        imageRatio="1:1"
+        heading="WHERE AUTOMOTIVE OBSESSION MEETS BRAND STRATEGY"
+        // paragraph="We're not a generic web agency. Every client we work with operates in the
+        // luxury automotive space — and we build sites that actually reflect that.
+        // Strategy-first. Proof behind every decision. Hands-off for you."
+        cta={{ label: 'Hear the story', href: '/about' }}
+      />
+
+      {/* ── 4. Text Image Block Section ── */}
+      <TextImageBlockSection
+        sectionLabel="HOW WE WORK"
+        items={[
+          {
+            imageSrc: "/Mclaren F1 Lineup close.jpg",
+            imageAlt: 'Alignment session',
+            imageRatio: '1:1',
+            heading: 'ALIGNMENT',
+            paragraph:
+              ' A clear understanding of your business, your goals, and what the brand needs to achieve. This shapes everything that follows, so every move forward is deliberate and informed.',
+            cta: { label: 'Learn more', href: '/process#alignment' },
+            showButton: true,
+          },
+          {
+            imageSrc: "/Ferrari Daytona Sp3 5.jpg",
+            imageAlt: 'Discovery phase',
+            imageRatio: '1:1',
+            heading: 'DISCOVERY',
+            paragraph:
+              "An in-depth audit of how the business started, what's working, where it's headed, and the competitors around it. Every insight feeds the strategy, so nothing gets built on assumptions.",
+            cta: { label: 'Learn more', href: '/process#discovery' },
+            showButton: true,
+          },
+          {
+            imageSrc: "/Koenigsegg Jesko Attack, finished in full Koenigsegg Naked Carbon (KNC).jpg",
+            imageAlt: 'Foundation design',
+            imageRatio: '1:1',
+            heading: 'FOUNDATION',
+            paragraph:
+              'The strategic foundation that defines the brand, its positioning, mission, values, and DNA. A complete framework for how the brand thinks, speaks, and shows up, presented in person and built to give every future decision a clear direction.',
+            cta: { label: 'Learn more', href: '/process#foundation' },
+            showButton: true,
+          },
+          {
+            imageSrc: "/Mcalren F1 close-front-duo.jpg",
+            imageAlt: 'Site launch',
+            imageRatio: '1:1',
+            heading: 'TAKE IT LIVE',
+            paragraph:
+              'This is where it all comes together. Strategy, positioning, and direction become real, showing up the same everywhere your brand lives. It stops living on paper and starts performing in the world.',
+            cta: { label: 'Learn more', href: '/process#take-it-live' },
+            showButton: true,
+          },
+        ]}
+      />
+      <Services
+  heading="OUR CRAFT"
+  imageSrc="/1954–1955 Ferrari 750 Monza Spider.jpg"
+  services={[
+  { title: 'BRAND DEVELOPMENT', description: 'Everything your brand needs, built from the strategy up. Positioning that earns credibility, design that holds its standard, and a brand that performs where it counts, not just one that looks the part.', href: '#', imageSrc: '/Chevron B16.jpg' },
+  { title: 'WEB DESIGN',     description: 'The site your clients land on, shaped by the brand foundation already in place. Premium, clear, and made to convert the inquiries that matter most.', href: '#', imageSrc: '/Koenigsegg Jesko Attack, finished in full Koenigsegg Naked Carbon (KNC).jpg' },
+  { title: 'GRAPHIC DESIGN', description: 'The logo, wordmark, and marks that make a brand instantly recognizable, built so every piece looks like it belongs to the same premium brand, wherever it shows up.', href: '#', imageSrc: '/Mcalren F1 close-front-duo.jpg' },
+]}
+/>
+
+      {/* ── 5. Blog Section ── */}
+      {/* <BlogSection
+        sectionLabel="From The Blog"
+        heading="SUPERCAR DEEP DIVE"
+        limit={3}
+      /> */}
+
+    </main>
+    </PageWrapper>
+    /* </div> */
+  )
 }

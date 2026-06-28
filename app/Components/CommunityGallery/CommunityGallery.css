@@ -1,0 +1,94 @@
+/* ============================================
+   CommunityGallery Component
+   ============================================ */
+
+.community-gallery {
+  width: 100%;
+  padding: 48px 96px;
+}
+
+@media (max-width: 768px) {
+  .community-gallery {
+    padding: 48px 24px;
+  }
+}
+.community-gallery__heading {
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.community-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 36px 24px;
+}
+
+.community-gallery__card {
+  grid-column: span var(--span);
+  overflow: hidden;
+}
+
+/* Link fills the card and is the position context */
+.community-gallery__link {
+  position: relative;
+  display: block;
+}
+
+.community-gallery__image {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Overlay — matches TextImageBlock: 25% default → 50% hover */
+.community-gallery__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.community-gallery__link:hover .community-gallery__overlay {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* Icon — centered, fades in on hover */
+.community-gallery__icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.community-gallery__link:hover .community-gallery__icon {
+  opacity: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .community-gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+
+  .community-gallery__card {
+    grid-column: span 1;
+  }
+
+  .community-gallery__image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .community-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}

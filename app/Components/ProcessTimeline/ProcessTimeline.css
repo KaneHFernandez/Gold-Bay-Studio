@@ -1,0 +1,134 @@
+/* ============================================
+   ProcessTimeline Component
+   Uses CardBasic (horizontal-left / horizontal-right)
+   for each row. This file only handles:
+     — the vertical center line
+     — the dot overlay per step
+     — overrides to strip CardBasic's default padding
+       and resize typography for the process design
+   ============================================ */
+
+/* ------ Container ------ */
+.process-timeline {
+  position: relative;
+  width: 100%;
+}
+
+/* Vertical center line — grows downward via scaleY driven by scroll (JS) */
+.process-timeline__line {
+  position: absolute;
+  left: 50%;
+  top: 240px;    /* start at first dot center (step min-height 480px / 2) */
+  bottom: 240px; /* end at last dot center */
+  width: 1px;
+  background-color: var(--border-default, #e0e0e0);
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ------ Step row ------ */
+.process-step {
+  position: relative;
+  min-height: 480px;
+}
+
+/* ------ Dot at center line ------ */
+.process-step__dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--text-heading, #000);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 0.2s ease;
+}
+
+/* Dot visible state — added by IntersectionObserver when dot hits center */
+.process-step__dot.is-visible {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* ------ CardBasic overrides ------ */
+
+/* No outer card padding — image bleeds edge-to-edge.
+   64px gap between image and content columns. */
+.process-step .card-basic {
+  padding: 0;
+  gap: 64px;
+  min-height: 480px;
+  align-items: stretch;
+}
+
+/* Image takes exactly half the card width minus half the gap,
+   so both columns are as large as possible. */
+.process-step .card-basic__image {
+  flex: 0 0 calc(50% - 32px);
+  overflow: hidden;
+}
+
+/* Content cell: 24px padding on all sides, vertically centered */
+.process-step .card-basic__content {
+  flex: 1;
+  padding: 24px;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Large uppercase heading to match Figma design */
+.process-step .card-basic__heading {
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+/* Paragraph override — slightly larger line-height for long copy */
+.process-step .card-basic__paragraph {
+  font-size: var(--type-p-size, 16px);
+  line-height: 1.65;
+  max-width: 480px;
+}
+
+/* horizontal-right: right-aligned content should center-align for process */
+.process-step .card-basic--horizontal-right .card-basic__content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* ------ Responsive ------ */
+@media (max-width: 900px) {
+  .process-timeline__line,
+  .process-step__dot {
+    display: none;
+  }
+
+  .process-step .card-basic {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .process-step .card-basic__image {
+    flex: 0 0 auto;
+    min-height: 280px;
+  }
+
+  .process-step .card-basic--horizontal-right {
+    flex-direction: column;
+  }
+
+  .process-step .card-basic__content {
+    padding: 40px 24px;
+    text-align: left;
+    align-items: flex-start;
+  }
+}

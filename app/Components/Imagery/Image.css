@@ -1,0 +1,49 @@
+/* ============================================
+   Image Component
+   Based on Design System: "Imagry" component
+   Variants: 2:1 · 3:2 · 5:4 · 1:1 · 4:5 · 16:9
+   ============================================ */
+
+/* ------ Wrapper ------ */
+.img-wrapper {
+  position:   relative;
+  width:      100%;
+  overflow:   hidden;
+  background-color: var(--surface-default, #ffffff);
+}
+
+/* ------ Aspect Ratios ------ */
+.img--2x1  { aspect-ratio: 2 / 1;  }
+.img--3x2  { aspect-ratio: 3 / 2;  }
+.img--5x4  { aspect-ratio: 5 / 4;  }
+.img--1x1  { aspect-ratio: 1 / 1;  }
+.img--4x5  { aspect-ratio: 4 / 5;  }
+.img--16x9 { aspect-ratio: 16 / 9; }
+
+/* ------ Image ------ */
+.img-media {
+  display:    block;
+  width:      100%;
+  height:     100%;
+  object-fit: cover; /* overridden by inline style if objectFit prop is set */
+}
+
+/* ------ Placeholder (no src) ------ */
+.img-placeholder {
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  width:            100%;
+  height:           100%;
+  background-color: var(--color-gray-50, #e5e5e5);
+  position:         absolute;
+  inset:            0;
+}
+
+.img-placeholder__label {
+  font-family:  var(--font-ui, 'Inter', sans-serif);
+  font-size:    14px;
+  font-weight:  600;
+  color:        var(--color-gray-200, #999999);
+  letter-spacing: 0.5px;
+}

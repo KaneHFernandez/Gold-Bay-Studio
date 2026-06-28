@@ -1,0 +1,99 @@
+/* ============================================
+   BlogSection Component
+   Figma: Blog Section — Card/Basic grid
+   Dark mode via global.css tokens.
+   ============================================ */
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 48px 96px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--surface-default);
+}
+
+/* ------ Section header ------ */
+.blog-section__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* .blog-section__eyebrow {
+  font-family: 'Aeonik VF', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-success, #449198);
+  margin: 0;
+} */
+
+/* .blog-section__heading {
+  font-family: 'Heading Pro Wide Trial', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--text-heading);
+  margin: 0;
+} */
+
+/* ------ Card grid — full width, min 392px per card ------ */
+.blog-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+/* ------ Card link wrapper ------ */
+.blog-section__card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ------ Card overrides (CardBasic used as base) ------ */
+.blog-section__card {
+  padding: 0;          /* remove CardBasic's default padding so image is edge-to-edge */
+  border: none;        /* no outline */
+  box-shadow: none;    /* no shadow */
+  background: transparent;
+}
+
+.blog-section__card:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+/* 16px gap between image and text content, left-aligned */
+.blog-section__card .card-basic__content {
+  padding: 16px 0 0;
+  gap: 8px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.blog-section__card.card-basic--default {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.blog-section__card .card-basic__cta-group {
+  justify-content: flex-start;
+}
+
+/* ------ Responsive ------ */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 48px 24px;
+    gap: 32px;
+  }
+
+  .blog-section__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
