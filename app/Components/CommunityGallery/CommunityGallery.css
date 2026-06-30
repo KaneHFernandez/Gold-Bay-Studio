@@ -39,14 +39,12 @@
 .community-gallery__link {
   position: relative;
   display: block;
+  height: 285px;
 }
 
 .community-gallery__image {
-  width: 100%;
-  height: 285px;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 .community-gallery__overlay {
@@ -91,7 +89,7 @@
     grid-column: span 1;
   }
 
-  .community-gallery__image {
+  .community-gallery__link {
     height: 180px;
   }
 }

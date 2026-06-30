@@ -16,6 +16,24 @@ html.gallery-active .footer {
   position: sticky;
   bottom: 0;
   z-index: 2147483647;
+  animation: footer-slide-up 0.35s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+html.gallery-leaving .footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 2147483647;
+  animation: footer-slide-down 0.35s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes footer-slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes footer-slide-down {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
 }
 
 .footer__inner {

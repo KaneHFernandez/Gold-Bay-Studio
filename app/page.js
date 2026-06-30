@@ -127,11 +127,11 @@ export default function Home() {
 />
 
       {/* ── 5. Blog Section ── */}
-      {/* <BlogSection
+      <BlogSection
         sectionLabel="From The Blog"
         heading="SUPERCAR DEEP DIVE"
-        limit={3}
-      /> */}
+        limit={1}
+      />
 
     </main>
     </PageWrapper>

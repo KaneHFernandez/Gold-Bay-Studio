@@ -50,7 +50,7 @@ export default function AboutPage() {
     },
     { src: "/Mclaren 720s.jpg", href: "https://quentin-martinez.com/work" },
     {
-      src: "/100-octane-Ferrari-458.jpg",
+      src: "/100-octane-Ferrari-458.JPG",
       href: 'https://www.instagram.com/kanehfernandez/'
     },
     {
@@ -149,11 +149,11 @@ export default function AboutPage() {
           ]}
         />
         {/* ── 5. Blog Section ── */}
-        {/* <BlogSection
+        <BlogSection
          sectionLabel="From The Blog"
          heading="SUPERCAR DEEP DIVE"
-         limit={3}
-       /> */}
+         limit={1}
+       /> 
 
         <CommunityGallery images={images} heading="From the Community" />
       </main>

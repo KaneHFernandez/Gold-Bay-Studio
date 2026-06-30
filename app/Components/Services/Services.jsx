@@ -76,6 +76,7 @@ export default function Services({
                   src={service.imageSrc}
                   alt=""
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="services-section__bg-image"
                 />
                 <div className="services-section__bg-overlay" />

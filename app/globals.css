@@ -29,7 +29,7 @@ body {
    ───────────────────────────────────────── */
 @font-face {
   font-family: 'Heading Pro Wide Trial';
-  src: url('/public/font/Heading-Pro-Wide-Bold.ttf') format('truetype');
+  src: url('/font/Heading-Pro-Wide-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@ body {
 
 @font-face {
   font-family: 'Aeonik VF';
-  src: url('/public/font/aeonikvf.ttf') format('truetype');
+  src: url('/font/aeonikvf.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;

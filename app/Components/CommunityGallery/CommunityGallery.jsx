@@ -59,20 +59,34 @@ export default function CommunityGallery({ images = [], heading = 'From the Comm
 
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    // Only make the footer sticky while the gallery is in the viewport
+    // Only make the footer sticky while the gallery is in the viewport,
+    // with slide-up in and slide-down out animations
+    let leaveTimer = null;
+    const html = document.documentElement;
+
     const io = new IntersectionObserver(
       ([entry]) => {
-        document.documentElement.classList.toggle('gallery-active', entry.isIntersecting);
+        if (entry.isIntersecting) {
+          clearTimeout(leaveTimer);
+          html.classList.remove('gallery-leaving');
+          html.classList.add('gallery-active');
+        } else if (html.classList.contains('gallery-active')) {
+          html.classList.add('gallery-leaving');
+          leaveTimer = setTimeout(() => {
+            html.classList.remove('gallery-active', 'gallery-leaving');
+          }, 350);
+        }
       },
       { threshold: 0 }
     );
     io.observe(wrapper);
 
     return () => {
+      clearTimeout(leaveTimer);
       window.removeEventListener('scroll', onScroll);
       ro.disconnect();
       io.disconnect();
-      document.documentElement.classList.remove('gallery-active');
+      html.classList.remove('gallery-active', 'gallery-leaving');
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, []);
@@ -102,8 +116,8 @@ export default function CommunityGallery({ images = [], heading = 'From the Comm
                       loading="lazy"
                       src={item.src}
                       alt=""
-                      width={600}
-                      height={285}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="community-gallery__image"
                     />
                     <div className="community-gallery__overlay" />
