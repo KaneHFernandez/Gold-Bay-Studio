@@ -48,7 +48,7 @@ export default function Home() {
       {/* ── 2. Full-width video ── */}
       <div style={{ width: '100%', lineHeight: 0 }}>
         <video
-          src="/Gold Bay Intro Reel.mp4"
+          src="/Gold Bay Personality Reel.mp4"
           autoPlay
           loop
           muted
