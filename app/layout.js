@@ -1,8 +1,10 @@
 import "./globals.css";
 import Header from "./Components/Navbar/Header";
 import Footer from "./Components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
+  
   metadataBase: new URL('https://goldbay.studio'),
 
   title: {
@@ -76,6 +78,7 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="day" data-scroll-behavior="smooth">
+      <Analytics/>
       <head>
         <script
           type="application/ld+json"
