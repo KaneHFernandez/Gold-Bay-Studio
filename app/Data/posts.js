@@ -32,8 +32,8 @@ export const posts = [
     date: '2026-06-30',
     eyebrow: '30/06/2026 in Car Stories',
     title: 'How McLaren Created the Perfect Driver\'s Car',
-    excerpt:
-      'The McLaren F1 was built around one idea: the driver comes first. Here\'s how a small team turned that into the best car of the 20th century.',
+    // excerpt:
+    //   'The McLaren F1 was built around one idea: the driver comes first. Here\'s how a small team turned that into the best car of the 20th century.',
     coverImage: '/Mclaren-F1-blog/Mcalren F1 front-single.jpg',
     coverImageAlt: 'McLaren F1 front view',
     content: [
@@ -95,80 +95,6 @@ export const posts = [
         type: 'image',
         src: '/Mclaren-F1-blog/Mcalren F1 front-side-driving copy.jpg',
         alt: 'McLaren F1 front side, driving',
-      },
-      {
-        type: 'quote',
-        text: 'It was stable enough that I could walk by the side of it. The best car ever built.',
-      },
-    ],
-  },
-  {
-    slug: 'why-your-website-is-losing-leads',
-    date: '2025-01-15',
-    eyebrow: 'Strategy',
-    title: 'Why Your Website Is Losing Qualified Leads (And How to Fix It)',
-    excerpt:
-      'Most automotive lifestyle brands have websites that look good but convert at under 1%. Here\'s what\'s actually going wrong.',
-    coverImage: '/img/blog/cover-losing-leads.jpg',
-    coverImageAlt: 'Supercar on track',
-    content: [
-      {
-        type: 'paragraph',
-        text: 'The average website in the luxury automotive space converts at 0.2–0.5%. That means for every 1,000 visitors, fewer than 5 people reach out. If your site is getting traffic but not leads, the design isn\'t the problem — the strategy is.',
-      },
-      {
-        type: 'heading',
-        text: 'The Real Problem: No Clear Path',
-      },
-      {
-        type: 'paragraph',
-        text: 'Visitors land on your site and immediately face a decision: scroll, click a menu item, or leave. Without a clear visual hierarchy that guides them toward one specific action, most choose the easiest option — leaving.',
-      },
-      {
-        type: 'image',
-        src: '/img/blog/conversion-path.jpg',
-        alt: 'Website conversion path diagram',
-      },
-      {
-        type: 'heading',
-        text: 'What a Strategy-Backed Site Looks Like',
-      },
-      {
-        type: 'paragraph',
-        text: 'Every section on the page has a job. The hero qualifies the visitor. The social proof builds trust. The services section clarifies what you offer. And the CTA makes the next step obvious. When each section does its job, conversion rates climb.',
-      },
-      {
-        type: 'quote',
-        text: 'We took a local business from 0.2% to 6.99% conversion in 30 days — not by redesigning the visuals, but by redesigning the strategy.',
-      },
-    ],
-  },
-  {
-    slug: 'what-qualified-leads-actually-look-like',
-    date: '2025-02-03',
-    eyebrow: 'Lead Generation',
-    title: 'What Qualified Leads Actually Look Like for Automotive Lifestyle Brands',
-    excerpt:
-      'Not all enquiries are worth your time. Here\'s how to attract people who are already pre-sold before they reach out.',
-    coverImage: '/img/blog/cover-qualified-leads.jpg',
-    coverImageAlt: 'Driver in supercar',
-    content: [
-      {
-        type: 'paragraph',
-        text: 'A qualified lead already knows what you offer, believes it\'s worth the price, and is ready to take the next step. The goal of your website isn\'t to explain what you do — it\'s to confirm that you\'re the right choice.',
-      },
-      {
-        type: 'heading',
-        text: 'Filtering at the Top',
-      },
-      {
-        type: 'paragraph',
-        text: 'Your hero section is a filter, not an introduction. It should speak directly to your ideal customer and subtly repel everyone else. Vague headlines attract curious browsers. Specific headlines attract serious buyers.',
-      },
-      {
-        type: 'image',
-        src: '/img/blog/hero-example.jpg',
-        alt: 'Example of a high-converting hero section',
       },
     ],
   },
