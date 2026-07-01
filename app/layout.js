@@ -78,7 +78,6 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="day" data-scroll-behavior="smooth">
-      <Analytics/>
       <head>
         <script
           type="application/ld+json"
@@ -90,6 +89,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
