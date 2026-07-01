@@ -1,7 +1,6 @@
 import AboutSection from './Components/AboutSection/AboutSection'
 import TextImageBlockSection from './Components/TextImageBlockSection/TextImageBlockSection'
 import BlogSection from './Components/BlogSection/BlogSection'
-import Image from './Components/Imagery/Image'
 import PageWrapper from './Components/PageWrapper'
 import Services from './Components/Services/Services'
 import './styles.css';
@@ -46,14 +45,16 @@ export default function Home() {
         </p>
       </div>
 
-      {/* ── 2. Full-width image ── */}
+      {/* ── 2. Full-width video ── */}
       <div style={{ width: '100%', lineHeight: 0 }}>
-        <Image
-          src="/Chevron B16.jpg" alt="Driver portrait" ratio="16:9"
-          // style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+        <video
+          src="/Gold Bay Intro Reel.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ width: '100%', height: 'auto', display: 'block' }}
         />
-               {/* <Image src="/Mcalren F1 close-front-duo.jpg" alt="Driver portrait" ratio="1:2" />
-      </div> */}
       </div>
 
       {/* ── 3. About Section ── */}

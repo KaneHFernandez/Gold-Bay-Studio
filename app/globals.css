@@ -295,7 +295,7 @@ body {
 .dark {
 
   /* Surfaces */
-  --surface-default:     #000000;  /* Colour/Night */
+  --surface-default:     #0c0c0c;  /* Colour/Night */
   --surface-night:       #FFFFFF;  /* Colour/Day */
   --surface-sunny:       #000000;  /* Colour/Night */
   --surface-primary:     #290B08;  /* Redscale/900 */
