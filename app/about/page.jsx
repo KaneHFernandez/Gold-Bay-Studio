@@ -149,11 +149,11 @@ export default function AboutPage() {
           ]}
         />
         {/* ── 5. Blog Section ── */}
-        <BlogSection
-         sectionLabel="From The Blog"
-         heading="SUPERCAR DEEP DIVE"
-         limit={1}
-       /> 
+   <BlogSection
+        sectionLabel="From The Blog"
+        heading="SUPERCAR DEEP DIVE"
+        limit={2}
+      />
 
         <CommunityGallery images={images} heading="From the Community" />
       </main>

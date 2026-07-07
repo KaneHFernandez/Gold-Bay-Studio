@@ -98,6 +98,89 @@ export const posts = [
       },
     ],
   },
+  {
+    slug: 'the-de-tomaso-p72-explained',
+    date: '2026-07-07',
+    eyebrow: '07/07/2026 in Car Stories',
+    title: 'The De Tomaso P72, Explained',
+    // excerpt:
+    //   'De Tomaso is back. The P72 is a 1.8 million dollar supercar with three pedals, no touchscreen and a supercharged Ford V8. Only 72 will be made.',
+    coverImage: '/De-Tomaso-P72-blog/De Tomaso P72 front-doors.jpg',
+    coverImageAlt: 'Light blue De Tomaso P72 with both doors open',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Most new supercars are in a numbers race with each other. The De Tomaso P72 walks the other way. It has three pedals and a gated shifter. There is no touchscreen. The factory exhaust is capped at a polite 63 decibels. It costs around 1.6 million euros, which lands close to 1.8 million dollars, and only 72 will be made. It is expensive and slow to build and it feels like it came from another era. That is the whole point.',
+      },
+      {
+        type: 'heading',
+        text: 'The Name Has More History Than Most People Know',
+      },
+      {
+        type: 'paragraph',
+        text: 'De Tomaso is an Italian brand with an Argentine heart. It was founded in Modena in 1959 by Alejandro de Tomaso, an Argentine racing driver who left Buenos Aires after getting tangled up in politics against Juan Perón and settled in Italy. He gave the world the Pantera and the Mangusta, both of them powered by Ford. That Argentine root is why the P72 badge is blue and white, the colors of the flag, milled from solid aluminum.',
+      },
+      {
+        type: 'image',
+        src: '/De-Tomaso-P72-blog/De Tomaso P72 front.jpg',
+        alt: 'De Tomaso P72 front three-quarter view',
+      },
+      {
+        type: 'heading',
+        text: 'The Car It Is Pretending to Be',
+      },
+      {
+        type: 'paragraph',
+        text: 'The P72 is an homage to the 1965 De Tomaso P70. The P70 has one of the great what if stories in racing. Alejandro de Tomaso developed it with Carroll Shelby, the Texan behind the Cobra and the GT40 program. The plan was a De Tomaso chassis with Shelby power. The partnership fell apart before it amounted to much. So the P72 is not just styled after an old prototype. It finishes a sentence that got cut off sixty years ago.',
+      },
+      {
+        type: 'heading',
+        text: 'The Man Who Brought It Back',
+      },
+      {
+        type: 'paragraph',
+        text: 'The modern De Tomaso exists because of Norman Choi, a Hong Kong businessman who acquired the marque in 2014. He is a serial supercar owner, and a lot of the P72\'s stubbornness comes from him. He describes the car as a moving theater. He is the reason there are no paddle shifters. He even specified the supercharger pulley to whine as little as possible, because he wanted a blown engine that still sounds naturally aspirated.',
+      },
+      {
+        type: 'image',
+        src: '/De-Tomaso-P72-blog/De Tomaso P72 rear-drive.jpg',
+        alt: 'De Tomaso P72 driving past the lake',
+      },
+      {
+        type: 'heading',
+        text: 'The Look',
+      },
+      {
+        type: 'paragraph',
+        text: 'The body was drawn by Jowyn Wong of Wyn Design, who came out of McLaren and also penned the Apollo Intensa Emozione. Every panel is carbon fiber. The main reference was the 1965 P70, but you can also catch the Ferrari 330 P3 in the surfaces, plus the Lola T70 and the original Porsche 917. The whole shape is built around low drag, so it reads as one clean piece. There are no popup aero elements and no air brake. Lead designer Jakub Jodlowski has said the roofline sits so low that regulations would not allow it in a few years.',
+      },
+      {
+        type: 'heading',
+        text: 'The Engine, and Why It Is "Only" 700 Horsepower',
+      },
+      {
+        type: 'paragraph',
+        text: 'Like the Pantera and Mangusta before it, the P72 runs Ford power. In the middle sits a 5.0 liter Coyote V8, heavily reworked by Roush and topped with a bespoke supercharger. It makes about 700 horsepower and roughly 605 lb ft of torque. The engineers say only the block is still recognizably American. By 2025 standards that is modest, and Choi is fine with it. He sees the P72 as a timepiece meant to be passed down, so it has to stay reliable and easy to maintain for decades. A proven Ford V8 does that in a way a highly strung V12 does not.',
+      },
+      {
+        type: 'image',
+        src: '/De-Tomaso-P72-blog/De Tomaso P72 rear.jpg',
+        alt: 'De Tomaso P72 rear three-quarter view by the lake',
+      },
+      {
+        type: 'heading',
+        text: 'Who Actually Builds It',
+      },
+      {
+        type: 'paragraph',
+        text: 'The P72 is assembled in Affalterbach, Germany, by HWA. HWA was founded by Hans Werner Aufrecht, the "A" in AMG, and it works out of the same small town where AMG grew up. So the final recipe is unusual. The heritage is Italian and Argentine. The power is American. The design came from a team trained in Britain. The engineering and the build are German. Only 72 will be made.',
+      },
+      {
+        type: 'quote',
+        text: '"Sometimes it is nice to be on the fast lane, but sometimes it is also very nice to be on the slow one just to enjoy the moment." - Norman Choi',
+      },
+    ],
+  },
 ]
 
 /**

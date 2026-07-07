@@ -131,7 +131,7 @@ export default function Home() {
       <BlogSection
         sectionLabel="From The Blog"
         heading="SUPERCAR DEEP DIVE"
-        limit={1}
+        limit={2}
       />
 
     </main>
