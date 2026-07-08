@@ -9,7 +9,7 @@ const NAV_LINKS = [
 ]
 
 export default function Footer({
-  email = 'info@goldbay.studio',
+  email = 'kane@goldbay.studio',
   links = NAV_LINKS,
   className = '',
 }) {

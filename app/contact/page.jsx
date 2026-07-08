@@ -20,7 +20,7 @@ export default function ContactPage() {
         heading="LETS WORK TOGETHER"
         paragraph="Let's talk about where your brand is now and where it needs to go."
         eyebrow="Get in touch"
-        subheading="info@goldbay.studio"
+        subheading="kane@goldbay.studio"
         imageSrc={"/1954–1955 Ferrari 750 Monza Spider.jpg"}
       />
     </main>

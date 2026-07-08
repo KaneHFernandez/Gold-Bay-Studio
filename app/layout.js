@@ -68,7 +68,7 @@ const jsonLd = {
   '@type': 'ProfessionalService',
   name: 'Gold Bay Studio',
   url: 'https://goldbay.studio',
-  email: 'info@goldbay.studio',
+  email: 'kane@goldbay.studio',
   description: 'Brand development studio built exclusively for the premium automotive world. Strategy, identity, and positioning for supercar clubs, luxury dealerships, track day operators, and niche manufacturers.',
   knowsAbout: ['Automotive Branding', 'Brand Strategy', 'Premium Automotive', 'Supercar Branding'],
   serviceType: ['Brand Development', 'Web Design', 'Graphic Design'],
