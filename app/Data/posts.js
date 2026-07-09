@@ -181,6 +181,112 @@ export const posts = [
       },
     ],
   },
+{
+    slug: 'the-ultimate-ferrari-laferrari',
+    date: '2026-07-09',
+    eyebrow: '09/07/2026 in Car Stories',
+    title: 'The Ultimate Ferrari',
+    // excerpt:
+    //   'LaFerrari means "the Ferrari." It was the first flagship Ferrari designed inside its own studio, and the first with an F1 style hybrid. Here is the story.',
+    coverImage: '/LaFerrari-blog/Ferrari LaFerrari side-front.jpg',
+    coverImageAlt: 'Red Ferrari LaFerrari, front three-quarter in the mountains',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Ferrari does not build a car like this often. Every couple of decades it puts everything it knows into one halo car, sells a tiny number of them, and lets that car define the era. The LaFerrari is the fifth. It arrived in 2013, and it was the first of these cars to use a hybrid system. It is also the first one Ferrari named after itself.',
+      },
+      {
+        type: 'heading',
+        text: 'The Name Says Everything',
+      },
+      {
+        type: 'paragraph',
+        text: 'LaFerrari means "the Ferrari." Not a code like F40 or a number like 288. Ferrari looked at this car and called it the definitive one. For more than sixty years, Ferrari road cars were styled by Pininfarina. The LaFerrari broke that. Ferrari ran a design contest between Pininfarina and its own studio, the Centro Stile, led by Flavio Manzoni, and management picked the Ferrari team\'s design. So the most important modern Ferrari was also the first flagship the company designed on its own.',
+      },
+      {
+        type: 'image',
+        src: '/LaFerrari-blog/Ferrari LaFerrari close-side-front.jpg',
+        alt: 'Red LaFerrari front three-quarter, close side view',
+      },
+      {
+        type: 'heading',
+        text: 'Where It Sits in the Family',
+      },
+      {
+        type: 'paragraph',
+        text: 'The LaFerrari is the fifth in a bloodline of halo cars. It follows the 288 GTO and the F40, then the F50 and the Enzo. Each one was the best Ferrari could do at the time, and each one set the tone for the cars that came after it. When it launched, you could not simply buy one. Ferrari invited its most loyal owners, and only 499 coupes were made.',
+      },
+      {
+        type: 'image',
+        src: '/LaFerrari-blog/Ferrari LaFerrari front-doors.jpg',
+        alt: 'Red LaFerrari with both doors open, front view',
+      },
+      {
+        type: 'heading',
+        text: 'The Engine and the Hybrid',
+      },
+      {
+        type: 'paragraph',
+        text: 'In the middle sits a 6.3 liter V12 making around 789 horsepower on its own, which is already a huge number for a naturally aspirated engine. Then there is the hybrid. An electric motor and battery add short bursts of extra power that push the total to about 950 horsepower, with 664 lb ft of torque combined. Top speed is around 220 mph. Zero to 60 comes in about 2.6 seconds. You cannot drive it on electricity alone. The system works like the KERS unit on a Formula 1 car. It captures energy that would normally be wasted under braking and hands it back as a shove of power when you want it.',
+      },
+      {
+        type: 'image',
+        src: '/LaFerrari-blog/Ferrari LaFerrari sky-front.jpg',
+        alt: 'Red LaFerrari from above, cabin and rear deck',
+      },
+      {
+        type: 'heading',
+        text: 'The Details You Only Catch Up Close',
+      },
+      {
+        type: 'paragraph',
+        text: 'The mirrors look like little pods floating on stalks. The body is much wider than the cabin, so a normal mirror would sit too far away to be useful. Ferrari put them on long arms to bring them back into view, and only the mirror head folds in while the carbon fiber post stays fixed. Look at the door and you will spot the Ferrari shield sitting right on it. On almost every other Ferrari the shield lives on the front fender, but on this car there is no flat piece of fender to hold it.',
+      },
+      {
+        type: 'image',
+        src: '/LaFerrari-blog/Ferrari LaFerrari side-front-doors.jpg',
+        alt: 'Red LaFerrari with doors open, side front view in the mountains',
+      },
+      {
+        type: 'heading',
+        text: 'Getting In',
+      },
+      {
+        type: 'paragraph',
+        text: 'There is no obvious door handle. You slide your hand up into the intake gap on the side of the car and pull the release hidden in there. Next to it is a keyhole, in case your fob battery dies. The door lifts up like a wing. Open it and you can see a wide gap between the door and the edge of the cabin, which tells you how much wider the outside of the car is than the space you sit in. Part of the reason the door is so deep is that it carries an air channel feeding that side intake.',
+      },
+      {
+        type: 'image',
+        src: '/LaFerrari-blog/Ferrari LaFerrari far-side-front.jpg',
+        alt: 'Red LaFerrari on a mountain road above a village',
+      },
+      {
+        type: 'heading',
+        text: 'Inside',
+      },
+      {
+        type: 'paragraph',
+        text: 'The steering wheel is not round. It is closer to a square, which gives you a better place to hold on when you are working hard. The wheel carries the windshield controls and the drive mode selector, the turn signals are buttons on it, and there is a round red engine start button. The horn is the strange one. It is not in the center of the wheel but up near the top of one spoke. Ferrari does not want you taking your hands off the wheel when you do not have to, so the controls come to your thumbs instead. The seats are fixed to the tub, so the pedals move to you on a lever instead.',
+      },
+      {
+        type: 'image',
+        src: '/LaFerrari-blog/Ferrari LaFerrari rear.jpg',
+        alt: 'Red LaFerrari rear three-quarter view',
+      },
+      {
+        type: 'heading',
+        text: 'Why It Matters',
+      },
+      {
+        type: 'paragraph',
+        text: 'The LaFerrari landed at a turning point. Hybrid power was arriving in racing and everyone knew it was coming to the road. Ferrari could have hidden that behind old ideas. Instead it built its definitive car around the new technology, styled it inside its own studio for the first time in decades, and put its own name on the result. A car that cost about 1.4 million dollars new now trades somewhere around 5 to 6 million.',
+      },
+      // {
+      //   type: 'quote',
+      //   text: 'They called it the Ferrari. After the 288 GTO, the F40, the F50 and the Enzo, this was the one that got the name.',
+      // },
+    ],
+  },
 ]
 
 /**

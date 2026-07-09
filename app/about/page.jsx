@@ -152,7 +152,7 @@ export default function AboutPage() {
    <BlogSection
         sectionLabel="From The Blog"
         heading="SUPERCAR DEEP DIVE"
-        limit={2}
+        limit={3}
       />
 
         <CommunityGallery images={images} heading="From the Community" />
