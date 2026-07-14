@@ -20,10 +20,9 @@ export default function BlogSection({
   h1 = false,
   className = '',
 }) {
-  let displayPosts = excludeSlug
-    ? posts.filter((post) => post.slug !== excludeSlug)
-    : posts
-
+let displayPosts = [...posts]
+  .reverse()
+  .filter((post) => (excludeSlug ? post.slug !== excludeSlug : true))
   if (random) {
     displayPosts = [...displayPosts].sort(() => Math.random() - 0.5)
   }
