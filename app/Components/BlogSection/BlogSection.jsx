@@ -15,11 +15,23 @@ export default function BlogSection({
   sectionLabel = 'From The Blog',
   heading,
   limit,
+  excludeSlug,
+  random = false,
   h1 = false,
   className = '',
 }) {
-  const displayPosts = limit ? posts.slice(0, limit) : posts
+  let displayPosts = excludeSlug
+    ? posts.filter((post) => post.slug !== excludeSlug)
+    : posts
+
+  if (random) {
+    displayPosts = [...displayPosts].sort(() => Math.random() - 0.5)
+  }
+
+  displayPosts = limit ? displayPosts.slice(0, limit) : displayPosts
+
   const Heading = h1 ? 'h1' : 'h2'
+  // ...rest stays the same
   return (
     <section className={['blog-section', className].filter(Boolean).join(' ')}>
       {(sectionLabel || heading) && (

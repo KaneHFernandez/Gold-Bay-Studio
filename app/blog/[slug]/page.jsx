@@ -38,11 +38,13 @@ export default async function BlogPage({ params }) {
     <>
       <BlogPost post={post} />
 
-      {/* <BlogSection
-        sectionLabel="From The Blog"
-        heading="MORE POSTS"
-        limit={1}
-      /> */}
+<BlogSection
+  sectionLabel="From The Blog"
+  heading="MORE POSTS"
+  limit={3}
+  excludeSlug={slug}
+  random
+/>
     </>
   )
 }

@@ -287,6 +287,37 @@ export const posts = [
       // },
     ],
   },
+  {
+  slug: 'the-pagani-zonda-c12-how-one-man-built-his-dream',
+  date: '2026-07-13',
+  eyebrow: '13/07/2026 in Car Stories',
+  title: 'The Pagani Zonda C12: How One Man Built His Dream',
+  // excerpt: 'No racing history and no famous badge. Just Horacio Pagani, a workshop near Modena, and the first Zonda. Here is how the C12 came to be.',
+  coverImage: '/Zonda-C12-blog/Pagani-Zonda-front.jpg',
+  coverImageAlt: 'Silver Pagani Zonda C12 parked in a Modena piazza at sunset',
+  content: [
+    { type: 'paragraph', text: 'Some cars arrive with decades of racing behind them. The Pagani Zonda C12 arrived with none of that. No motorsport trophies. No famous badge. Just one man, a small workshop near Modena, and a promise that art and engineering belong in the same object. When it debuted at the 1999 Geneva Motor Show, it made everyone else look outdated.' },
+    { type: 'heading', text: 'The man before the car' },
+    { type: 'paragraph', text: 'Horacio Pagani was born in Casilda, a small town in Argentina, in 1955. As a kid he built things. A minibike from scrap parts at fourteen. A dune buggy out of a wrecked Renault while he was still in school. He studied engineering and art, and he never really saw them as separate subjects. He liked to quote Leonardo da Vinci, who believed art and science could walk hand in hand. That idea became the whole point of Pagani the company.' },
+    { type: 'paragraph', text: 'In his twenties he built his own single seat race car and caught the attention of Juan Manuel Fangio, the five time Formula One champion and fellow Argentine. Fangio became a mentor and opened doors. His recommendation letters helped Pagani get to Italy, the home of the exotic car. In 1983 Pagani took a job at Lamborghini, started near the bottom, and worked up to running the new composite materials group.' },
+    { type: 'paragraph', text: 'Then came the disagreement that started everything. Pagani wanted Lamborghini to buy an autoclave, the oven used to cure carbon fiber parts in house. Lamborghini said no. So he bought his own. He left in 1991 and founded Modena Design, making carbon parts for other manufacturers. Pagani Automobili followed in 1992. The goal was always to build a car with his own name on the back.' },
+    { type: 'image', src: '/Zonda-C12-blog/Pagani-Zonda-side.jpg', alt: 'Silver Pagani Zonda C12 side profile in front of a Modena palazzo' },
+    { type: 'heading', text: 'Naming the car' },
+    { type: 'paragraph', text: 'The project began under the name Fangio F1, a tribute to his friend and mentor. When Fangio passed away in 1995, Pagani dropped the tribute name out of respect. The car became the Zonda instead, named after the warm, dry wind that flows down from the Andes in Argentina. The C stands for Cristina, his wife. The 12 is the cylinder count. Simple, and personal.' },
+    { type: 'heading', text: 'Six years to first light' },
+    { type: 'paragraph', text: 'Pagani spent six years developing the car. He put in his own money and reportedly remortgaged his house to keep it alive. Many people doubted a small, unknown shop could take on Ferrari and Lamborghini. He had one real advantage, and it was carbon fiber. While most of the industry still leaned on steel and aluminum, Pagani built the Zonda around a full carbon composite tub. The design borrowed from the Sauber-Mercedes Group C racers of the late 1980s, the silver cars that dominated sports car racing.' },
+    { type: 'heading', text: 'The engine' },
+    { type: 'paragraph', text: 'Pagani wanted a Mercedes V12, and he got one. The C12 uses the M120, a naturally aspirated 6.0 liter V12 supplied by AMG. In the original C12 the motor produces around 394 horsepower and 420 lb ft of torque, sent to the rear wheels through a manual gearbox. Three pedals and a proper gated shifter. Pagani cared more about how the engine sounded than about chasing the biggest power figure, and that priority set the tone for every Zonda that followed.' },
+    { type: 'image', src: '/Zonda-C12-blog/Pagani-Zonda-rear.jpg', alt: 'Rear of the silver Pagani Zonda C12 showing the four central exhaust pipes' },
+    { type: 'heading', text: 'The way it looks' },
+    { type: 'paragraph', text: 'The body is carbon fiber, formed in as few pieces as possible. The front and rear clamshells lift at each end and are held down with leather straps, a signature Pagani touch. The nose carries two pairs of round headlights in exposed carbon surrounds. At the back sits the feature everyone remembers. Four exhaust pipes stacked in a tight circle in the center of the tail, ringed by mesh. On the original C12 the rear wing is a single piece unit. The later C12 S introduced the split wing.' },
+    { type: 'heading', text: 'How few there are' },
+    { type: 'paragraph', text: 'Only five C12 cars were built with the 6.0 liter engine. One was used for crash testing and homologation. One served as the demonstrator and show car. The rest went to customers. Three were painted silver in tribute to the Mercedes Group C racers. One was left in exposed carbon. One was yellow. Demand was far bigger than five, and that interest is what kept the company alive and led straight to the C12 S, the F, the Cinque, the R, and everything since.' },
+    { type: 'heading', text: 'Chassis 001 lives again' },
+    { type: 'paragraph', text: 'The very first C12, chassis 001, was the car sacrificed to the crash test barrier so the model could be certified for the road. It was not thrown away. For the Zonda twentieth anniversary in 2019, Pagani in house restoration program, Pagani Rinascimento, rebuilt it and showed it again at the Geneva Motor Show, on the same stage where the Zonda first appeared in 1999.' },
+    { type: 'paragraph', text: 'The Zonda C12 is proof that a single person with a clear idea can build something the giants cannot. It paired cutting edge carbon fiber with leather straps and hand stitched seats, and made that combination feel natural. Everything Pagani sells today grew from this car.' },
+  ],
+}
 ]
 
 /**
