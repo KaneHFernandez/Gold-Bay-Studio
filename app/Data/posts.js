@@ -691,7 +691,85 @@ export const posts = [
     { q: 'Is the Lamborghini Huracán reliable?', a: 'Yes. It shares its platform and drivetrain with the Audi R8, which makes it one of the more dependable supercars to own.' },
   ],
   relatedPosts: ['how-mclaren-created-the-perfect-drivers-car', 'the-ultimate-ferrari-laferrari', 'the-pagani-zonda-c12-how-one-man-built-his-dream'],
+},
+{
+
+  slug: 'pagani-zonda-revolucion-the-wildest-zonda-ever-built',
+
+  date: '2026-07-14',
+
+  updated: '2026-07-14',
+
+  eyebrow: '14/07/2026 in Car Stories',
+
+  title: 'The Pagani Zonda Revolución: The Wildest Zonda Ever Built',
+
+  metaTitle: 'Pagani Zonda Revolución: The Wildest Zonda Ever Built',
+
+  metaDescription: 'The Pagani Zonda Revolución is the last and most extreme Zonda. An 800 PS AMG V12, F1 style DRS, carbon titanium, and only five made. Here is the story.',
+
+  focusKeyword: 'Pagani Zonda Revolución',
+
+  // excerpt: 'Pagani kept saying the Zonda was finished. Then it built the Revolución, an 800 PS track weapon with F1 aero, and proved it did not mean it.',
+
+  coverImage: '/Zonda-Revolucion-blog/Track-Only Pagani Zonda Revolución front-building.jpg',
+
+  coverImageAlt: 'Black carbon Pagani Zonda Revolución with gold wheels parked in a Modena piazza',
+
+  content: [
+
+    { type: 'paragraph', text: 'Pagani kept saying the Zonda was finished. It said it with the Zonda R. It said it again with the Tricolore. Then in 2013 it built the Zonda Revolución and proved it did not mean any of it. This was the last and most extreme version of the Zonda, a track car with 800 PS, Formula 1 aero, and a carbon titanium tub. Only five were made. It is the Zonda pushed as far as Pagani could push it.' },
+
+    { type: 'heading', text: 'The car that would not end' },
+
+    { type: 'paragraph', text: 'To understand the Revolución you have to follow the Zonda R first. In 2009 Pagani built the Zonda R, a track only version of its road car that shared only about ten percent of its parts with the Zonda F. In 2010 it lapped the Nürburgring in 6 minutes 47 seconds and set a production based record. It was already the fastest Pagani ever made. The Revolución is the end of that story. The name is a play on words, R evolution, and it took the Zonda R and turned everything up one final time.' },
+
+    { type: 'image', src: '/Zonda-Revolucion-blog/Track-Only Pagani Zonda Revolución front-far.jpg', alt: 'Pagani Zonda Revolución side profile showing the large rear wing and gold wheels' },
+
+    { type: 'heading', text: 'What makes it different' },
+
+    { type: 'paragraph', text: 'The heart of the car is its monocoque, made from carbon titanium. Weaving titanium into the carbon fiber makes the structure stronger without adding weight. The result is a car that weighs just 1,070 kilograms. For reference, that is lighter than a Mini Cooper and around a hundred pounds lighter than a Mazda Miata. Every part of the Revolución exists to make it faster through a corner, not just faster in a straight line.' },
+
+    { type: 'heading', text: 'What engine the Zonda Revolución uses' },
+
+    { type: 'paragraph', text: 'Behind the driver sits the same basic engine that powered every great Zonda, the Mercedes AMG 6.0 liter V12. In the Revolución it was pushed to 800 PS, about 789 horsepower, with 538 lb ft of torque. It breathes through a Formula 1 style exhaust and revs to the sky. Paired with that light body, it gives a power to weight ratio that beats a Bugatti Veyron. Power goes to the rear wheels through a six speed sequential gearbox that changes gear in 20 milliseconds.' },
+
+    { type: 'image', src: '/Zonda-Revolucion-blog/Track-Only Pagani Zonda Revolución front-close.jpg', alt: 'Pagani Zonda Revolución front view among other Paganis in a Modena square' },
+
+    { type: 'heading', text: 'Formula 1 in a road car company\'s workshop' },
+
+    { type: 'paragraph', text: 'The Revolución borrowed heavily from racing. The rear wing carries a DRS, a drag reduction system like the one on a Formula 1 car. The driver can work it manually with a button on the wheel, or hold that button and let the car manage the wing on its own. It opens for less drag on the straights and closes for more grip in the corners. The brakes are Brembo CCMR carbon ceramic discs derived from Formula 1, 15 percent lighter than the Zonda R\'s, and the Bosch traction control offers 12 settings.' },
+
+    { type: 'heading', text: 'Track only, with one exception' },
+
+    { type: 'paragraph', text: 'The Revolución was never meant for the road. It has no plate, no comfort, and none of the systems a street car needs. There is one exception. In 2021 the British firm Lanzante, the same company that made the McLaren P1 GTR road legal, converted one Revolución for the street. It was serious work, because the Revolución is far closer to a race car than to the road going Zonda it resembles.' },
+
+    { type: 'heading', text: 'How rare, and how much' },
+
+    { type: 'paragraph', text: 'Only five Zonda Revolucións were built, not counting the prototype. Each one cost 2.2 million euros before taxes, which landed close to 2.9 million dollars. Values have climbed hard since. One Zonda R in Revolución specification sold for more than 5 million dollars in the United States, then sold again for around 11 million in Australia.' },
+
+    { type: 'heading', text: 'Why the Zonda Revolución matters' },
+
+    { type: 'paragraph', text: 'The Revolución is the Zonda taken to its absolute limit. It is the last chapter of a car that started as one man\'s dream in 1999 and ended as an 800 PS track weapon with Formula 1 technology. Pagani could have let the Zonda fade out quietly. Instead it built the hardest, fastest, most extreme version of all and used it to say goodbye.' },
+
+  ],
+
+  faq: [
+
+    { q: 'How many Pagani Zonda Revolucións were built?', a: 'Only five, not counting the prototype.' },
+
+    { q: 'How much power does the Zonda Revolución have?', a: 'Around 800 PS, about 789 horsepower, from a 6.0 liter AMG V12, with 538 lb ft of torque.' },
+
+    { q: 'How much did the Zonda Revolución cost?', a: '2.2 million euros before taxes, close to 2.9 million dollars new. Values are far higher now.' },
+
+    { q: 'Is the Pagani Zonda Revolución road legal?', a: 'No, it is a track only car. One example was later converted for the road by Lanzante in 2021.' },
+
+  ],
+
+  relatedPosts: ['the-pagani-zonda-c12-how-one-man-built-his-dream', 'the-ultimate-ferrari-laferrari', 'lamborghini-huracan-the-best-selling-lamborghini-ever-made'],
+
 }
+
 ]
 
 /**
