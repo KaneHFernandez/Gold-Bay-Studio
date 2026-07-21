@@ -25,7 +25,7 @@ const STEPS = [
     title: 'DISCOVERY',
     paragraph:
       'This is where the real digging happens. An in-depth look at how the business started, what\'s working, what isn\'t, and where it\'s headed — alongside a close audit of the competitors around it. Every insight feeds directly into the strategy, so nothing gets built on assumptions, and the sharper the understanding here, the more accurate every decision that follows.',
-    imageSrc: "/Ferrari Daytona Sp3 5.jpg",
+    imageSrc: "/Chevron B16.jpg",
   },
   {
     title: 'FOUNDATION',

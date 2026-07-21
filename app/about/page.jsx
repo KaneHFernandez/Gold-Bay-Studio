@@ -85,11 +85,11 @@ export default function AboutPage() {
         </div>
 
         {/* ── 2. Full-width image ── */}
-        <div style={{ width: "100%", lineHeight: 0 }}>
+        {/* <div style={{ width: "100%", lineHeight: 0 }}>
           <Image
             src="/Mclaren F1 Lineup.jpg"
             alt="Driver portrait"
-            ratio="16:9"
+          ratio="1:2"
             style={{
               width: "100%",
               height: "auto",
@@ -99,55 +99,65 @@ export default function AboutPage() {
           />
           {/* <Image src="/Mcalren F1 close-front-duo.jpg" alt="Driver portrait" ratio="1:2" />
       </div> */}
-        </div>
+        {/* </div>  */}
+<img
+  src="/Mclaren F1 Lineup.jpg"
+  alt="McLaren F1 lineup"
+  style={{
+    width: '100%',
+    aspectRatio: '16 / 6',
+    objectFit: 'cover',
+    objectPosition: 'center 80%',
+    display: 'block',
+  }}
+/>
 
         {/* ── 4. Text Image Block Section ── */}
-        <TextImageBlockSection
-          sectionLabel="HOW WE WORK"
-          items={[
-            {
-              imageSrc: "/Mclaren F1 Lineup close.jpg",
-              imageAlt: "Alignment session",
-              imageRatio: "1:1",
-              heading: "ALIGNMENT",
-              paragraph:
-                " A clear understanding of your business, your goals, and what the brand needs to achieve. This shapes everything that follows, so every move forward is deliberate and informed.",
-              cta: { label: "Learn more", href: "/process#alignment" },
-              showButton: true,
-            },
-            {
-              imageSrc: "/Ferrari Daytona Sp3 5.jpg",
-              imageAlt: "Discovery phase",
-              imageRatio: "1:1",
-              heading: "DISCOVERY",
-              paragraph:
-                "An in-depth audit of how the business started, what's working, where it's headed, and the competitors around it. Every insight feeds the strategy, so nothing gets built on assumptions.",
-              cta: { label: "Learn more", href: "/process#discovery" },
-              showButton: true,
-            },
-            {
-              imageSrc:
-                "/Koenigsegg Jesko Attack, finished in full Koenigsegg Naked Carbon (KNC).jpg",
-              imageAlt: "Foundation design",
-              imageRatio: "1:1",
-              heading: "FOUNDATION",
-              paragraph:
-                "The strategic foundation that defines the brand, its positioning, mission, values, and DNA. A complete framework for how the brand thinks, speaks, and shows up, presented in person and built to give every future decision a clear direction.",
-              cta: { label: "Learn more", href: "/process#foundation" },
-              showButton: true,
-            },
-            {
-              imageSrc: "/Mcalren F1 close-front-duo.jpg",
-              imageAlt: "Site launch",
-              imageRatio: "1:1",
-              heading: "TAKE IT LIVE",
-              paragraph:
-                "This is where it all comes together. Strategy, positioning, and direction become real, showing up the same everywhere your brand lives. It stops living on paper and starts performing in the world.",
-              cta: { label: "Learn more", href: "/process#take-it-live" },
-              showButton: true,
-            },
-          ]}
-        />
+      <TextImageBlockSection
+             sectionLabel="HOW WE WORK"
+             items={[
+               {
+                 imageSrc: "/Mclaren F1 Lineup close.jpg",
+                 imageAlt: 'Alignment session',
+                 imageRatio: '1:1',
+                 heading: 'ALIGNMENT',
+                 paragraph:
+                   ' A clear understanding of your business, your goals, and what the brand needs to achieve. This shapes everything that follows, so every move forward is deliberate and informed.',
+                 cta: { label: 'Learn more', href: '/process#alignment' },
+                 showButton: true,
+               },
+               {
+                 imageSrc: "/Ferrari 812 Competizione Aperta.jpg",
+                 imageAlt: 'Discovery phase',
+                 imageRatio: '1:1',
+                 heading: 'DISCOVERY',
+                 paragraph:
+                   "An in-depth audit of how the business started, what's working, where it's headed, and the competitors around it. Every insight feeds the strategy, so nothing gets built on assumptions.",
+                 cta: { label: 'Learn more', href: '/process#discovery' },
+                 showButton: true,
+               },
+               {
+                 imageSrc: "/Ferrari 296 Challenge.png",
+                 imageAlt: 'Foundation design',
+                 imageRatio: '1:1',
+                 heading: 'FOUNDATION',
+                 paragraph:
+                   'The strategic foundation that defines the brand, its positioning, mission, values, and DNA. A complete framework for how the brand thinks, speaks, and shows up, presented in person and built to give every future decision a clear direction.',
+                 cta: { label: 'Learn more', href: '/process#foundation' },
+                 showButton: true,
+               },
+               {
+                 imageSrc: "/Mcalren F1 close-front-duo.jpg",
+                 imageAlt: 'Site launch',
+                 imageRatio: '1:1',
+                 heading: 'TAKE IT LIVE',
+                 paragraph:
+                   'This is where it all comes together. Strategy, positioning, and direction become real, showing up the same everywhere your brand lives. It stops living on paper and starts performing in the world.',
+                 cta: { label: 'Learn more', href: '/process#take-it-live' },
+                 showButton: true,
+               },
+             ]}
+           />
         {/* ── 5. Blog Section ── */}
    <BlogSection
         sectionLabel="From The Blog"

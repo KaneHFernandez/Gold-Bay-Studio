@@ -59,10 +59,10 @@ export default function Home() {
 
       {/* ── 3. About Section ── */}
       <AboutSection
-        leftImageSrc="/Ferrari 812 Competizione Aperta.jpg"
+        leftImageSrc="/1974 Porsche 911 Carrera RSR 3.0.png"
         leftImageAlt="Supercar on track"
-        rightImageSrc='/Pagani Zonda 760 "Unica" Roadster.jpg'
-        rightImageAlt="Driving experience event"
+        rightImageSrc='/1996 McLaren F1 GTR (Chassis 12R) - Gulf Racing Livery.png'
+        rightImageAlt="1996 McLaren F1 GTR (Chassis 12R) - Gulf Racing Livery"
         imageRatio="1:1"
         heading="WHERE AUTOMOTIVE OBSESSION MEETS BRAND STRATEGY"
         // paragraph="We're not a generic web agency. Every client we work with operates in the
@@ -86,7 +86,7 @@ export default function Home() {
             showButton: true,
           },
           {
-            imageSrc: "/Ferrari Daytona Sp3 5.jpg",
+            imageSrc: "/Ferrari 812 Competizione Aperta.jpg",
             imageAlt: 'Discovery phase',
             imageRatio: '1:1',
             heading: 'DISCOVERY',
@@ -96,7 +96,7 @@ export default function Home() {
             showButton: true,
           },
           {
-            imageSrc: "/Koenigsegg Jesko Attack, finished in full Koenigsegg Naked Carbon (KNC).jpg",
+            imageSrc: "/Ferrari 296 Challenge.png",
             imageAlt: 'Foundation design',
             imageRatio: '1:1',
             heading: 'FOUNDATION',
@@ -121,19 +121,22 @@ export default function Home() {
   heading="OUR CRAFT"
   imageSrc="/1954–1955 Ferrari 750 Monza Spider.jpg"
   services={[
-  { title: 'BRAND DEVELOPMENT', description: 'Everything your brand needs, built from the strategy up. Positioning that earns credibility, design that holds its standard, and a brand that performs where it counts, not just one that looks the part.', href: '#', imageSrc: '/Chevron B16.jpg' },
-  { title: 'WEB DESIGN',     description: 'The site your clients land on, shaped by the brand foundation already in place. Premium, clear, and made to convert the inquiries that matter most.', href: '#', imageSrc: '/Koenigsegg Jesko Attack, finished in full Koenigsegg Naked Carbon (KNC).jpg' },
-  { title: 'GRAPHIC DESIGN', description: 'The logo, wordmark, and marks that make a brand instantly recognizable, built so every piece looks like it belongs to the same premium brand, wherever it shows up.', href: '#', imageSrc: '/Mcalren F1 close-front-duo.jpg' },
+  { title: 'BRAND DEVELOPMENT', description: 'Everything your brand needs, built from the strategy up. Positioning that earns credibility, design that holds its standard, and a brand that performs where it counts, not just one that looks the part.', href: '#', imageSrc: '/Porsche Rennsport side.jpg' },
+  { title: 'WEB DESIGN',     description: 'The site your clients land on, shaped by the brand foundation already in place. Premium, clear, and made to convert the inquiries that matter most.', href: '#', imageSrc: '/Zonda-C12-blog/Pagani-Zonda-engine.jpg' },
+  { title: 'GRAPHIC DESIGN', description: 'The logo, wordmark, and marks that make a brand instantly recognizable, built so every piece looks like it belongs to the same premium brand, wherever it shows up.', href: '#', imageSrc: '/Mclaren F1 Gtr wheel.jpg' },
 ]}
 />
 
       {/* ── 5. Blog Section ── */}
-      <BlogSection
-        sectionLabel="From The Blog"
-        heading="SUPERCAR DEEP DIVE"
-        limit={3}
-      />
-
+<BlogSection
+  sectionLabel="From The Blog"
+  heading="SUPERCAR DEEP DIVE"
+  slugs={[
+    'how-mclaren-created-the-perfect-drivers-car',
+    'mclaren-f1-gtr-the-road-car-that-won-le-mans',
+    'the-pagani-zonda-c12-how-one-man-built-his-dream',
+  ]}
+/>
     </main>
     </PageWrapper>
     /* </div> */
