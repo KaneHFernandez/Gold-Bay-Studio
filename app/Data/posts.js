@@ -852,6 +852,71 @@ export const posts = [
     { q: 'What does Codalunga mean?', a: 'It is Italian for long tail, a nod to the streamlined Le Mans racers of the 1960s.' },
   ],
   relatedPosts: ['pagani-zonda-revolucion-the-wildest-zonda-ever-built', 'the-pagani-zonda-c12-how-one-man-built-his-dream', 'the-ultimate-ferrari-laferrari'],
+},
+{
+  slug: 'maserati-mc12-gt1-the-race-car-that-came-first',
+  date: '2026-08-27',
+  updated: '2026-08-27',
+  eyebrow: '27/08/2026 in Car Stories',
+  title: 'Maserati MC12 GT1: The Race Car That Came First',
+  metaTitle: 'Maserati MC12 GT1: The Race Car That Came First',
+  metaDescription: 'The Maserati MC12 GT1 story. Why the race car came first, what separates it from the road car, its 40 wins from 94 races, and why it never raced at Le Mans.',
+  focusKeyword: 'Maserati MC12 GT1',
+  // excerpt: 'Maserati did not build a hypercar and then take it racing. It built a GT1 car, then produced 50 road versions because the rulebook said it had to.',
+  coverImage: '/2004-Maserati-MC12-GT1-blog/2004 Maserati MC12 GT1 front.jpg',
+  coverImageAlt: 'Maserati MC12 GT1 in blue and white race livery, front view',
+  content: [
+    { type: 'paragraph', text: 'The Maserati MC12 GT1 is one of the rare supercars where the road car is the footnote. Maserati did not build a hypercar and then decide to take it racing. It built a GT1 car first, then produced 50 road versions because the rulebook said it had to. Almost everything odd about the MC12 makes sense once you know which way around it happened.' },
+    { type: 'paragraph', text: 'Between 2004 and 2010 the MC12 GT1 entered 94 races and won 40 of them. Six teams\' championships. Six drivers\' championships. Two manufacturers\' cups. For most of that stretch it was simply the car everyone else in GT1 was trying to beat.' },
+    { type: 'heading', text: 'Why Maserati built the MC12' },
+    { type: 'paragraph', text: 'Maserati had not won an international championship since 1967, when Pedro Rodriguez took the South African Grand Prix in a Cooper running a Maserati V12. Thirty seven years is a long time to sit out.' },
+    { type: 'paragraph', text: 'Ferrari took control of Maserati in 1999 and spent the next few years rebuilding the road car range. The racing opening came in 2004, when the FIA loosened the GT Championship rules in a way that suited manufacturers building in small numbers. Maserati had access to the Enzo. It had a parent company with a race department. It went.' },
+    { type: 'paragraph', text: 'Giorgio Ascanelli ran the project. Internally the race car was the MCC, short for Maserati Corse Competizione, with a road version called the MCS. Frank Stephenson handled most of the body styling, working from a shape that began as a Giugiaro idea and was then developed in the wind tunnel. Andrea Bertolini did the bulk of the test driving. Michael Schumacher put in laps at Fiorano.' },
+    { type: 'paragraph', text: 'The entry price for FIA GT was 25 road cars. Maserati built 25 in 2004, then another 25 in 2005 after the FIA cut the maximum permitted length. Fifty road cars, plus the racers, and that was the whole run.' },
+    { type: 'heading', text: 'What is the difference between the MC12 and the MC12 GT1' },
+    { type: 'paragraph', text: 'They share a spine. Both use a carbon and Nomex monocoque derived from the Enzo, with aluminum subframes front and rear, double wishbone suspension at both ends operated by push rods, and a 6.0 liter Ferrari derived V12 sitting behind the cabin.' },
+    { type: 'paragraph', text: 'After that they separate. The road car, the Stradale, makes 630 PS (621 hp) at 7,500 rpm and 481 lb ft at 5,500 rpm, sent through the six speed Cambiocorsa automated manual. It weighs 1,500 kg and tops out at 205 mph.' },
+    { type: 'paragraph', text: 'The GT1 swaps the Cambiocorsa for a proper sequential gearbox and runs a 31.2 mm air restrictor, which the regulations demanded and which pulls output down to roughly 600 hp. It also sheds about 250 kg. Depending on the series it raced in, it sat between 1,200 and 1,250 kg. Cast iron discs replaced anything more exotic, again because of the rulebook.' },
+    { type: 'paragraph', text: 'The shape is the same either way, and the shape is the story. The MC12 is 5,143 mm long and 2,096 mm wide, which makes it wider and longer than a Hummer H2. The rear wing spans two meters and is only 30 mm thick. The floor is flat, the rear bumper carries diffusers, and the air scoop sits on the roof rather than the shoulders. There is no rear window at all. None of that was styling. It was a car built to make downforce with a road car draped over the top.' },
+    { type: 'image', src: '/2004-Maserati-MC12-GT1-blog/2004 Maserati MC12 GT1 top.jpg', alt: 'Overhead view of the Maserati MC12 GT1 showing its length, width and two meter rear wing' },
+    { type: 'heading', text: 'The 2004 debut and the homologation fight' },
+    { type: 'paragraph', text: 'The MC12 GT1 arrived at Imola in September 2004 under AF Corse, with chassis 003 and 006 as the lead cars. The FIA refused to let them score points because the homologation was still disputed. The cars finished second and third anyway.' },
+    { type: 'paragraph', text: 'At the next round, Oschersleben, Bertolini and Mika Salo won outright. It was the car\'s second race.' },
+    { type: 'paragraph', text: 'By the final round at Zhuhai the FIA had agreed to homologate the MC12s and let them score. They finished first and second. Four races into its existence, and with points allowed in only one of them, the MC12 was seventh in the teams\' championship.' },
+    { type: 'heading', text: 'How many races did the Maserati MC12 GT1 win' },
+    { type: 'paragraph', text: 'The 2005 season answered the question about whether the debut was a fluke. Maserati took the FIA GT Manufacturers\' Cup with 239 points, nearly double Ferrari\'s 125. Vitaphone Racing and JMB Racing finished first and second in the Team Cup. Vitaphone also won the Spa 24 Hours, with a JMB MC12 second.' },
+    { type: 'paragraph', text: 'The drivers\' title was the one that got away. Four MC12 drivers went into the Bahrain finale within striking distance, and Gabriele Gardel beat all of them in an older Ferrari 550 Maranello. Every Maserati driver finished within four points of first.' },
+    { type: 'paragraph', text: 'They fixed that. Vitaphone won the GT1 Teams\' Championship every year from 2005 through 2009. Michael Bartels and Andrea Bertolini shared the drivers\' title in 2006, 2008 and 2009, with Thomas Biagi taking it in 2007. When the series became the FIA GT1 World Championship in 2010, Vitaphone won five races and took both the drivers\' and teams\' world titles.' },
+    { type: 'paragraph', text: 'Six seasons. Forty wins from 94 starts.' },
+    { type: 'heading', text: 'Why the Maserati MC12 never raced at Le Mans' },
+    { type: 'paragraph', text: 'This is the part people forget, and it is the reason the MC12 sits slightly outside the canon.' },
+    { type: 'paragraph', text: 'The ACO, which runs Le Mans and sanctioned the Le Mans Endurance Series and the American Le Mans Series, had length and width limits. The MC12 broke both. Maserati shortened the nose by 201 mm to try to comply. The car was still 66 mm too wide. The ACO did not move, and the MC12 was locked out of its series.' },
+    { type: 'paragraph', text: 'IMSA took a different view for 2005 and allowed the MC12 into the ALMS as a guest, carrying a weight penalty and barred from scoring championship points. Some teams objected on the grounds that a shunt with a Maserati could wreck their Le Mans campaign. The car ran anyway.' },
+    { type: 'paragraph', text: 'Maserati sent one entry, chassis 003, under the Maserati Corse banner with Risi Competizione running it and Bertolini driving the full season. At Sebring it finished ninth overall and fifth in GT1. The rest of the year was a run of steady class results without a win, and the season ended badly at Laguna Seca, where contact with another car led to a long pit stop and then a broken radiator after the cold tires let go over a curb.' },
+    { type: 'paragraph', text: 'In 2007 Fredy Lienhard and Didier Theys brought an ex FIA GT car back to the ALMS with Doran Racing. IMSA let them score points and run a full width rear wing. They took third in class at Road America and put the car on the GT1 pole at Petit Le Mans.' },
+    { type: 'paragraph', text: 'The comparison writes itself. The McLaren F1 was a road car that got talked into racing and won Le Mans on its first attempt. The MC12 was a purpose built race car that was never allowed through the gate.' },
+    { type: 'heading', text: 'The Super GT chapter almost nobody remembers' },
+    { type: 'paragraph', text: 'In 2006, Team Goh took an MC12 GT1 to Japan. This was a serious outfit, the team that had won Le Mans outright in 2004 with an Audi R8, and it planned to run the Maserati in Super GT with Jan Magnussen and 2004 Le Mans winner Seiji Ara.' },
+    { type: 'paragraph', text: 'Magnussen fell ill before the official test at Suzuka and returned to Denmark. The car ran anyway and could not get near the front, lapping around 1:55.3 against a quickest GT500 time in the low 1:53s. The pattern was consistent across both test days. The MC12 was quick on the straights and gave all of it back in the corners, losing the most time in the fast stuff. Team Goh pulled the entry before the season started.' },
+    { type: 'paragraph', text: 'A car built for long European GT circuits did not translate to Suzuka. That is a fair reading of the MC12 in general.' },
+    { type: 'heading', text: 'How many Maserati MC12 GT1s were built' },
+    { type: 'paragraph', text: 'Twelve race cars by most counts, with some registries listing thirteen. Add the 50 road cars and the total production of the MC12 in all forms is 62.' },
+    { type: 'paragraph', text: 'There is one more variant worth knowing. In 2006 Maserati built the MC12 Versione Corse, a track only car derived from the GT1 that won the 2005 Manufacturers\' Cup. Free of the air restrictor, its V12 made 755 hp, more than either the road car or the racer. Twelve went to selected customers at around one million euros each, with a prototype and a couple of publicity cars alongside. Like the Ferrari FXX, Maserati stored and maintained them and the owners drove them on organized track days.' },
+    { type: 'heading', text: 'What is a Maserati MC12 GT1 worth' },
+    { type: 'paragraph', text: 'Public sales are thin, which makes the number soft.' },
+    { type: 'paragraph', text: 'Chassis 003, the factory car that raced at Imola and then ran Maserati\'s entire 2005 ALMS season, was offered at Gooding & Company\'s Pebble Beach auction in 2015 against a $2,000,000 to $2,500,000 estimate. It did not sell. A 2006 MC12 GT1 sold at RM Sotheby\'s in London in October 2019 for £2,050,000.' },
+    { type: 'paragraph', text: 'The road cars have since moved past that. A 2005 MC12 Stradale carried a $4,800,000 to $5,500,000 estimate at Broad Arrow\'s Monterey sale in 2025. The car built as paperwork now trades higher than the car it was built to legalize, which is a fair reflection of how few people can actually run a GT1 racer and how many can enjoy a road car.' },
+    { type: 'heading', text: 'Why the Maserati MC12 GT1 still matters' },
+    { type: 'paragraph', text: 'It is the last time Maserati was the car to beat at anything. Not a strong showing, not a competitive entry. The benchmark, for six seasons, in the most contested GT class of its era.' },
+    { type: 'paragraph', text: 'It also sits at the far end of a spectrum from the other homologation heroes. The McLaren F1 GTR came from a road car that was never meant to race. The MC12 GT1 came first, and 50 people got a road car out of the deal because the FIA required it. Both approaches produced something great. Only one of them was aiming at it.' },
+  ],
+  faq: [
+    { q: 'How many Maserati MC12 GT1s were built?', a: 'Twelve race cars by most counts, with some registries listing thirteen. Including the 50 road cars, total MC12 production was 62.' },
+    { q: 'What is the difference between the MC12 and the MC12 GT1?', a: 'The GT1 uses a sequential gearbox instead of the road car\'s Cambiocorsa, runs a 31.2 mm air restrictor that limits it to around 600 hp, and weighs roughly 250 kg less. The chassis, engine architecture and bodywork are shared.' },
+    { q: 'Why was the Maserati MC12 not allowed to race at Le Mans?', a: 'It was too long and too wide for ACO regulations. Maserati shortened the nose by 201 mm and the car was still 66 mm over on width. IMSA allowed it into the 2005 ALMS only as a guest entry with a weight penalty and no championship points.' },
+    { q: 'How much is a Maserati MC12 GT1 worth?', a: 'A 2006 example sold at RM Sotheby\'s London in 2019 for £2,050,000. Factory chassis 003 failed to sell at Gooding in 2015 against a $2,000,000 to $2,500,000 estimate. Public sales are rare enough that the market is hard to read.' },
+  ],
+  relatedPosts: ['mclaren-f1-gtr-the-road-car-that-won-le-mans', 'the-ultimate-ferrari-laferrari', 'how-mclaren-created-the-perfect-drivers-car'],
 }
 
 ]
@@ -862,3 +927,14 @@ export const posts = [
 export function getPostBySlug(slug) {
   return posts.find((p) => p.slug === slug) || null
 }
+
+
+
+
+
+
+
+
+
+
+
