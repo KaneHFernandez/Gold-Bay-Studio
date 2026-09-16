@@ -8,6 +8,7 @@ import './Header.css'
 const NAV_LINKS = [
   { label: 'About', href: '/about' },
   { label: 'Process', href: '/process' },
+  { label: 'Work', href: '/work' },
   { label: 'Blog', href: '/blog' },
 ]
 

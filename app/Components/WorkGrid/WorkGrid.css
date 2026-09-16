@@ -1,0 +1,80 @@
+/* Figma: WORK — side padding 96, row gap 36, column gap 24, row height 285 */
+.work-grid {
+  padding: 0 96px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.work-grid__row {
+  display: flex;
+  gap: 24px;
+  height: 285px;
+}
+
+.work-grid__tile {
+  flex-basis: 0;
+  min-width: 0;
+  display: block;
+  overflow: hidden;
+  background: #0c0c0c;
+}
+.work-grid__row--single .work-grid__tile {
+  background: none;
+  max-width: 606px;
+}
+.work-grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+
+/* One project in a row: full width, original aspect ratio, no crop */
+.work-grid__row--single {
+  height: auto;
+}
+
+.work-grid__row--single .work-grid__tile {
+  background: none;
+  width: 100%;
+}
+
+.work-grid__row--single .work-grid__img {
+  width: 100%;
+  height: auto;
+}
+.work-grid__tile:hover .work-grid__img { opacity: 0.85; }
+
+.work-grid__tile:focus-visible {
+  outline: 2px solid #0c0c0c;
+  outline-offset: 4px;
+}
+
+.work-grid__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .work-grid { padding: 0 48px 72px; gap: 24px; }
+  .work-grid__row { gap: 16px; height: 22vw; }
+  .work-grid__row--single { height: auto; }
+}
+
+@media (max-width: 640px) {
+  .work-grid { padding: 0 20px 48px; gap: 16px; }
+  .work-grid__row { flex-direction: column; height: auto; gap: 16px; }
+  .work-grid__tile {
+    flex: 0 0 auto !important;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+  .work-grid__row--single .work-grid__tile { aspect-ratio: auto; }
+}

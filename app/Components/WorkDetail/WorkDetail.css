@@ -1,0 +1,46 @@
+/* Figma: Frame 2 — padding 142 96, gap 24
+   Title: Heading Pro Wide 38/48, centered, uppercase
+   Body:  Aeonik 32/40, centered, 1080 max width */
+.work-detail__text {
+  padding: 48px 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  color: #0c0c0c;
+}
+
+.work-detail__title {
+  margin: 0;
+  font-family: 'Heading Pro Wide', sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.work-detail__body {
+  margin: 0;
+  max-width: 1080px;
+  font-family: 'Aeonik', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+
+/* matches the blank line between paragraphs in Figma */
+.work-detail__body + .work-detail__body { margin-top: 16px; }
+
+@media (max-width: 1024px) {
+  .work-detail__text { padding: 36px 36px; }
+  .work-detail__title { font-size: 32px; line-height: 40px; }
+  .work-detail__body { font-size: 24px; line-height: 32px; }
+}
+
+@media (max-width: 640px) {
+  .work-detail__text { padding: 24px 24px; gap: 16px; }
+  .work-detail__title { font-size: 26px; line-height: 32px; }
+  .work-detail__body { font-size: 18px; line-height: 26px; }
+  .work-detail__body + .work-detail__body { margin-top: 8px; }
+}
