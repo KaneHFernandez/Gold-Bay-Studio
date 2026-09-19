@@ -33,6 +33,25 @@ title: 'Porsche Club Of America Spec Logo Redesign',
       { src: '/PCA-Presentation/PCA-Logo-Redesign-Back.png', alt: 'PCA crest on a 911' },
     ],
   },
+  {
+  slug: 'sonoma-raceway-website-refresh',
+title: 'Sonoma Raceway Spec Website Refresh',
+    thumbnail: '/Sonoma-Presentation/Sonoma-Website-Refresh-Home.png',
+    thumbnailAlt: 'Sonoma Raceway website refresh home page',
+    description: [
+      'Gold Bay presents a self initiated refresh of the Sonoma Raceway website.',
+      'We set ourselves one goal. Improve conversions, accessibility, and overall user experience without losing what already works for fans who visit every season.',
+      'We started by studying circuit and raceway sites across the industry to see what works and what gets in the way, then carried the strongest patterns forward and left the rest behind.',
+      'The refresh leads with the events and gives each one a clear, direct path to act on. Considered hierarchy and accessible design run throughout, so fans reach what they need without digging for it.',
+      'Gold Bay led the concept and design from start to finish to build a site that puts the racing first and makes the next step obvious.',
+      'A self initiated concept. Gold Bay is not affiliated with or endorsed by Sonoma Raceway.',
+    ],
+    images: [
+      { src: '/Sonoma-Presentation/Sonoma-Website-Refresh-Home.png', alt: 'Sonoma Raceway home page' },
+      { src: '/Sonoma-Presentation/Sonoma-Website-Refresh-Events.png', alt: 'Sonoma Raceway events page' },
+      { src: '/Sonoma-Presentation/Sonoma-Website-Refresh-Mockup.png', alt: 'Sonoma Raceway site shown in a device mockup' },
+    ],
+  },
 ]
 
 export function getWork(slug) {

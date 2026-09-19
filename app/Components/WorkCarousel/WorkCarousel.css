@@ -28,23 +28,21 @@
   outline-offset: -2px;
 }
 
+/* Every slide is 605.55px tall. Width follows each image's own ratio. */
 .work-carousel__slide {
-  flex: 0 0 484.8px;
-  width: 484.8px;
+  flex: 0 0 auto;
   height: 605.55px;
   margin: 0;
   scroll-snap-align: start;
-  overflow: hidden;
 }
 
 .work-carousel__slide img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   pointer-events: none;
 }
-
 @media (max-width: 1024px) {
   .work-carousel { padding: 64px 0; }
   .work-carousel__track { padding: 0 48px; scroll-padding: 0 48px; gap: 24px; }
