@@ -41,7 +41,7 @@ export default function Home() {
           textAlign: 'center',
           margin: 0,
         }}>
-          A brand development studio built for the premium automotive world. We build brands people follow, respect, and trust the moment they encounter them. Years inside this industry mean we already know what works, what doesn't, and how to get there without the guesswork.
+          A brand development studio built for the premium automotive world. We build brands people follow, respect, and trust the moment they encounter them. Years inside this industry mean we already know what works, what doesn't, and how to get there.
         </p>
       </div>
 
