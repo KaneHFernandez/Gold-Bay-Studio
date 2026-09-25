@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       {/* ── 2. Full-width video ── */}
-      <div style={{ width: '100%', lineHeight: 0 }}>
+      {/* <div style={{ width: '100%', lineHeight: 0 }}>
         <video
           src="/Gold Bay Personality Reel.mp4"
           autoPlay
@@ -55,7 +55,7 @@ export default function Home() {
           playsInline
           style={{ width: '100%', height: 'auto', display: 'block' }}
         />
-      </div>
+      </div> */}
 
       {/* ── 3. About Section ── */}
       <AboutSection
