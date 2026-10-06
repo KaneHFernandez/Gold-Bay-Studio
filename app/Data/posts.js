@@ -1006,7 +1006,69 @@ export const posts = [
   relatedPosts: ['the-pagani-zonda-c12-how-one-man-built-his-dream', 'pagani-zonda-revolucion-the-wildest-zonda-ever-built', 'pagani-huayra-codalunga-simplicity-as-the-luxury'],
   tags: ['Pagani Zonda S Roadster', 'Pagani', 'Car Stories'],
   source: 'Source: Pagani, RM Sotheby\'s',
+},
+{
+  slug: 'nissan-r390-gt1-origins-and-the-full-story',
+  date: '2026-10-02',
+  updated: '2026-10-02',
+  eyebrow: '02/10/2026 in Car Stories',
+  title: 'Nissan R390 GT1: Origins and the Full Story',
+  metaTitle: 'Nissan R390 GT1: Origins and the Full Story',
+  metaDescription: 'The full Nissan R390 GT1 story: a Le Mans race car that had to be a road car first. Its origins, the one road car built, and both Le Mans runs.',
+  focusKeyword: 'Nissan R390 GT1',
+  // excerpt: 'A Le Mans race car that had to exist as a road car first. Where the Nissan R390 GT1 came from, how it was built, and what happened at Le Mans.',
+  coverImage: '/Nissan-R390-blog/Nissan R390 GT1 front.jpg',
+  coverImageAlt: 'Nissan R390 GT1 front view parked in front of a building',
+  content: [
+    { type: 'paragraph', text: 'The Nissan R390 GT1 is a Le Mans race car that had to exist as a road car first. The rules of the time demanded it, so Nissan built one road going example, then went racing. This is where it came from, how it was built, and what happened when it got to Le Mans.' },
+    { type: 'heading', text: 'Where it started' },
+    { type: 'paragraph', text: 'Nissan had history at Le Mans, but not the result it wanted. Through the late 1980s and early 1990s its Group C cars won championships in Japan and took three straight IMSA GTP titles in the United States. Le Mans was the gap. The best Nissan managed was fifth overall in 1990. At the end of 1992 the company stopped international sports car racing.' },
+    { type: 'paragraph', text: 'It came back in 1995 with the Skyline GT-R LM in the GT1 class. The Skyline was based on a real road car, which was the whole idea of GT racing at the time. It finished tenth overall, respectable, but well behind the McLaren F1 GTR and the Ferrari F40 that led the class.' },
+    { type: 'heading', text: 'The loophole that changed everything' },
+    { type: 'paragraph', text: 'Then Porsche rewrote the rules without breaking them. In 1996 it built the 911 GT1, a car designed as a racer first with a single road version made afterward to satisfy homologation. Mercedes did the same with the CLK GTR. These were not road cars adapted for the track. They were prototypes with a number plate.' },
+    { type: 'paragraph', text: 'That left the Skyline obsolete. If Nissan wanted to win Le Mans, it needed a purpose built car and one road version to make it legal. That car became the R390 GT1. The name followed the R380, Nissan\'s racer from the 1960s.' },
+    { type: 'heading', text: 'Why Nissan called in TWR' },
+    { type: 'paragraph', text: 'Nissan did not build the R390 on its own. Nismo partnered with Tom Walkinshaw Racing in England, a team that had already won Le Mans with Jaguar in 1988 and 1990, and whose Porsche WSC-95 won again in 1996 and 1997.' },
+    { type: 'paragraph', text: 'TWR\'s Tony Southgate handled the mechanical and aerodynamic design, with Yutaka Hagiwara from Nismo. Ian Callum led the styling, years before his Jaguar career. To save time, TWR based the carbon fiber tub on the Jaguar XJR-15, which traced back to the Le Mans winning XJR-9. The cockpit, roofline, and greenhouse came from the same tooling. The front, rear, and suspension were new to meet GT1 rules. The headlights were taken from the Nissan 300ZX.' },
+    { type: 'image', src: '/Nissan-R390-blog/Nissan R390 GT1 front-sky.jpg', alt: 'Nissan R390 GT1 in white race livery, front view', credit: 'Nissan' },
+    { type: 'heading', text: 'What engine the R390 uses' },
+    { type: 'paragraph', text: 'The engine choice came first. The Skyline\'s iron block straight six was heavy and sat too high, so Nissan went back to its Group C parts shelf and pulled the VRH35 V8 from the R89C. It was a 3.5 liter twin turbocharged V8 with an aluminum block, lighter and lower, and able to work as a stressed part of the chassis.' },
+    { type: 'paragraph', text: 'Reworked and renamed VRH35L, it made around 641 horsepower in race trim with the mandatory air restrictors fitted. For the road car it was detuned to about 550 horsepower. Power went through an Xtrac six speed sequential gearbox to the rear wheels.' },
+    { type: 'image', src: '/Nissan-R390-blog/Nissan R390 GT1 engine.jpg', alt: 'The twin turbocharged VRH35L V8 engine in the Nissan R390 GT1', credit: 'Nissan' },
+    { type: 'heading', text: 'The one road car' },
+    { type: 'paragraph', text: 'Only one true road going R390 was built, and it was never meant for sale. Nissan quoted a price of about a million dollars but there were no real buyers. The car existed to tick the homologation box.' },
+    { type: 'paragraph', text: 'It was finished in red in 1997, registered in the UK as P835 GUD, and shown at that year\'s Le Mans. In 1998 it was rebuilt with the long tail, new front end, side vents, and a ducktail spoiler, then repainted blue. That blue car is the one that survives, kept in Nissan\'s Heritage Collection at Zama in Japan.' },
+    { type: 'paragraph', text: 'The road car has a few quirks worth knowing. The taillights are from a Fiat Coupe. The speedometer reads only to 170 mph, on a car Nissan claimed could reach 220. Nobody has ever verified that top speed in a proper test. It was built to pass a rule, not to be sold in a showroom.' },
+    { type: 'heading', text: '1997: fast, then unlucky' },
+    { type: 'paragraph', text: 'Three R390s went to Le Mans in 1997 in black and red. In May, Martin Brundle set the fastest time of the pre qualifying weekend. The pace was there.' },
+    { type: 'paragraph', text: 'Then the scrutineers found a problem. The race car did not have the sealed luggage space the GT1 rules required, around 125 liters of it. TWR had to rebuild the rear of the car at short notice to make room, which meant rerouting the exhaust. With no time left for another endurance test, the fix caused its own fault. The new exhaust routing melted the solder holding the gearbox oil coolers together, and the gearboxes suffered for it.' },
+    { type: 'paragraph', text: 'Two of the three cars retired. The third survived to finish twelfth overall and fifth in class, but only after two complete gearbox changes. For a team with TWR\'s record, it was a letdown.' },
+    { type: 'heading', text: '1998: the result Nissan wanted' },
+    { type: 'paragraph', text: 'Nissan came back in 1998 with four cars and the lessons learned. Wind tunnel work after the 1997 race showed that a longer tail improved high speed stability and top speed, and, more importantly, fed more air to the gearbox. That cooling fix was the real gain.' },
+    { type: 'paragraph', text: 'The R390s were slower than the Mercedes, Toyota, and BMW entries in qualifying. The race was different. The faster cars hit trouble and dropped out. All four Nissans kept running and all four finished in the top ten, taking third, fifth, sixth, and tenth overall, beaten only by two Porsche 911 GT1s. The third place Calsonic car, driven by Hoshino, Suzuki, and Kageyama, gave Nissan its first overall podium at Le Mans.' },
+    { type: 'image', src: '/Nissan-R390-blog/Nissan R390 GT1 side-building.jpg', alt: 'Nissan R390 GT1 side profile parked in front of an old building', credit: 'Nissan' },
+    { type: 'heading', text: 'The end of the program' },
+    { type: 'paragraph', text: 'The win Nissan chased never came, and the chance went away. For 1999 the rules changed. The GT1 class was dropped in favor of a prototype class with no road car requirement. Nissan could have turned the R390 into a prototype, but the costs kept climbing and manufacturers kept leaving. Instead it built the open top R391 for 1999, had mixed results, and stopped Le Mans racing at the end of that year. Eight R390 GT1 race chassis were built across the two years, plus the single road car.' },
+    { type: 'heading', text: 'The engine outlived the car' },
+    { type: 'paragraph', text: 'One piece of the R390 carried on. When the GT1 era ended, McLaren acquired the rights to that twin turbo V8. The engine family that began in Nissan\'s Group C cars and raced in the R390 became the basis for McLaren\'s modern turbo V8, used in cars from the MP4-12C to the P1. A Nissan Le Mans engine ended up at the center of a British supercar range.' },
+    { type: 'heading', text: 'Comas and the road registered race car' },
+    { type: 'paragraph', text: 'The road car is a one-off, but there is a second R390 you can see on the street. Erik Comas drove the R390 at Le Mans in 1997 and 1998 and had been promised a road car as part of his deal. When Nissan built only the one museum car, that promise fell away.' },
+    { type: 'paragraph', text: 'Comas did not let it go. He bought his old race car, chassis 780009, the last R390 built and a fifth place finisher in 1998. Over two years it was restored and converted for the road, keeping about 95 percent of its original Le Mans parts. A glass windshield, door panels, a cooling system, a usable clutch, and basic trim were added to make it legal. Comas now drives a genuine Le Mans car on public roads.' },
+    { type: 'image', src: '/Nissan-R390-blog/Nissan R390 GT1 side-plant.jpg', alt: 'Nissan R390 GT1 side view beside greenery and flowers', credit: 'Nissan' },
+    { type: 'heading', text: 'Why the R390 is worth knowing' },
+    { type: 'paragraph', text: 'The R390 never won Le Mans and never reached the fame of the McLaren F1 or the Porsche 911 GT1. Most people know it from Gran Turismo. But it is one of the most serious cars Nissan has built: a one-off road car, eight race chassis, a clean set of top ten finishes in 1998, a first Le Mans podium, and an engine that outlasted the whole project. For a two year program that was meant to win and did not, it left more behind than most cars that did.' },
+  ],
+  faq: [
+    { q: 'How many Nissan R390 GT1s were built?', a: 'One road car and eight race chassis across 1997 and 1998.' },
+    { q: 'What engine does the Nissan R390 GT1 use?', a: 'A 3.5 liter twin turbocharged V8, the VRH35L, from the Group C R89C. Around 641 horsepower in race trim, about 550 in the road car.' },
+    { q: 'How did the R390 do at Le Mans?', a: 'Twelfth in 1997 after gearbox trouble. In 1998 all four cars finished, taking third, fifth, sixth, and tenth overall.' },
+    { q: 'Why does the R390 road car matter?', a: 'It was built only to make the race car legal, yet it became one of the rarest supercars ever, and its engine later went to McLaren.' },
+  ],
+  relatedPosts: ['mclaren-f1-gtr-the-road-car-that-won-le-mans', 'ferrari-f40-the-last-car-enzo-ferrari-approved', 'the-ultimate-ferrari-laferrari'],
+  tags: ['Nissan R390 GT1', 'Nissan', 'Car Stories'],
+  source: 'Source: Nissan, Supercar Nostalgia',
 }
+
 ]
 
 /**
@@ -1015,6 +1077,10 @@ export const posts = [
 export function getPostBySlug(slug) {
   return posts.find((p) => p.slug === slug) || null
 }
+
+
+
+
 
 
 
